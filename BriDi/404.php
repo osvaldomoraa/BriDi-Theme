@@ -2,7 +2,7 @@
 
 <main class="container">
     <div class="pagina404 my-5">
-        <h1>Error 4040 - No se encontro la página</h1>
+        <h1>Error 4040 - No se encontró la página</h1>
         <h2>Haz <a href="<?php echo home_url();?>">click aquí</a> para volver al inicio</h2>
     </div>
 </main>
