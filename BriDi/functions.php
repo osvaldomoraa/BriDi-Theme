@@ -47,3 +47,5 @@ require_once('features/custom-post-types.php');
 require_once('features/custom-fields.php');
 
 require_once('features/custom-taxonomy.php');
+
+require_once('features/forms/user-register.php');
