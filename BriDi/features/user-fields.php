@@ -92,20 +92,20 @@ function save_measurements_profile_fields( $user_id ) {
     if ( !current_user_can( 'edit_user', $user_id ) )
         return false;
 
-    update_usermeta( $user_id, 'pretest_gen', $_POST['pretest_gen'] );
-    update_usermeta( $user_id, 'postest_gen', $_POST['postest_gen'] );
+    update_user_meta( $user_id, 'pretest_gen', $_POST['pretest_gen'] );
+    update_user_meta( $user_id, 'postest_gen', $_POST['postest_gen'] );
 
-    update_usermeta( $user_id, 'pretest_sue', $_POST['pretest_sue'] );
-    update_usermeta( $user_id, 'postest_sue', $_POST['postest_sue'] );
+    update_user_meta( $user_id, 'pretest_sue', $_POST['pretest_sue'] );
+    update_user_meta( $user_id, 'postest_sue', $_POST['postest_sue'] );
 
-    update_usermeta( $user_id, 'pretest_est', $_POST['pretest_est'] );
-    update_usermeta( $user_id, 'postest_est', $_POST['postest_est'] );
+    update_user_meta( $user_id, 'pretest_est', $_POST['pretest_est'] );
+    update_user_meta( $user_id, 'postest_est', $_POST['postest_est'] );
 
-    update_usermeta( $user_id, 'pretest_eje', $_POST['pretest_eje'] );
-    update_usermeta( $user_id, 'postest_eje', $_POST['postest_eje'] );
+    update_user_meta( $user_id, 'pretest_eje', $_POST['pretest_eje'] );
+    update_user_meta( $user_id, 'postest_eje', $_POST['postest_eje'] );
 
-    update_usermeta( $user_id, 'pretest_hig', $_POST['pretest_hig'] );
-    update_usermeta( $user_id, 'postest_hig', $_POST['postest_hig'] );
+    update_user_meta( $user_id, 'pretest_hig', $_POST['pretest_hig'] );
+    update_user_meta( $user_id, 'postest_hig', $_POST['postest_hig'] );
 }
 
 add_action( 'personal_options_update', 'save_measurements_profile_fields' );

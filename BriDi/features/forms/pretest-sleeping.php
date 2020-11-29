@@ -188,9 +188,12 @@ function pre_slp_private_measurement(){
         add_post_meta($postId, 'med_mb_item_28', $metaItem28, true);
         add_post_meta($postId, 'med_mb_item_29', $metaItem29, true);
         add_post_meta($postId, 'med_mb_item_30', $metaItem30, true);
-      
+    
         add_action( 'pre_slp_alerts', 'pre_slp_form_success' );
   }
+
+  update_user_meta( $userId, 'pretest_sue', 01 );
+
 }
 add_action( 'init', 'pre_slp_private_measurement');
 
