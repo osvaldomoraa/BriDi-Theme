@@ -28,17 +28,17 @@ function measurements_profile_fields( $user ) { ?>
         </tr>
 
         <tr>
-            <th><label for="pretest_est">Pretest estres</label></th>
+            <th><label for="pretest_hyb">Pretest estres y emociones</label></th>
             <td>
-            <input type="number" name="pretest_est" id="pretest_est" value="<?php echo esc_attr( get_the_author_meta( 'pretest_est', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description">El participante hizo el pretest de estres</span>
+            <input type="number" name="pretest_hyb" id="pretest_hyb" value="<?php echo esc_attr( get_the_author_meta( 'pretest_hyb', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description">El participante hizo el pretest de estres y emociones</span>
             </td>
         </tr>
         <tr>
-            <th><label for="postest_est">Postest estres</label></th>
+            <th><label for="postest_hyb">Postest estres y emociones</label></th>
             <td>
-            <input type="number" name="postest_est" id="postest_est" value="<?php echo esc_attr( get_the_author_meta( 'postest_est', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description">El participante hizo el postest de estres</span>
+            <input type="number" name="postest_hyb" id="postest_hyb" value="<?php echo esc_attr( get_the_author_meta( 'postest_hyb', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description">El participante hizo el postest de estres y emociones</span>
             </td>
         </tr>
 
@@ -98,8 +98,8 @@ function save_measurements_profile_fields( $user_id ) {
     update_user_meta( $user_id, 'pretest_sue', $_POST['pretest_sue'] );
     update_user_meta( $user_id, 'postest_sue', $_POST['postest_sue'] );
 
-    update_user_meta( $user_id, 'pretest_est', $_POST['pretest_est'] );
-    update_user_meta( $user_id, 'postest_est', $_POST['postest_est'] );
+    update_user_meta( $user_id, 'pretest_hyb', $_POST['pretest_hyb'] );
+    update_user_meta( $user_id, 'postest_hyb', $_POST['postest_hyb'] );
 
     update_user_meta( $user_id, 'pretest_eje', $_POST['pretest_eje'] );
     update_user_meta( $user_id, 'postest_eje', $_POST['postest_eje'] );

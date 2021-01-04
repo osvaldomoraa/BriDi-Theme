@@ -40,11 +40,24 @@ function registrar_sidebar(){
     ));
 }
 
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+
 add_action('widgets_init','registrar_sidebar');
 
 require_once('features/custom-post-types.php');
 
-require_once('features/custom-fields.php');
+require_once('features/sesion-fields.php');
+
+require_once('features/measurement-fields.php');
+
+require_once('features/home-template-fields.php');
 
 require_once('features/custom-taxonomy.php');
 
