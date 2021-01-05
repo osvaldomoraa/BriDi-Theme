@@ -204,6 +204,10 @@ Sections
     text-align: center;
 }
 
+.about-row {
+    margin-bottom: 35px;
+}
+
 
 
 /* 
@@ -217,6 +221,9 @@ Responsive
     .hero-text-box {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .about-text-box {
+        padding: 20px;
     }
 }
 
@@ -256,5 +263,8 @@ Responsive
     }    
     .divider-bottom-l {
         height: 50px;
+    }
+    .about-text-box {
+        margin-bottom: 25px;
     }
 }
