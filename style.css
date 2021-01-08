@@ -176,6 +176,10 @@ Sections
     text-align: justify;
 }
 
+#about-section {
+    padding-bottom: 50px;
+}
+
 .about-heading-box {
     margin-bottom: 35px;
 }
@@ -208,6 +212,27 @@ Sections
     margin-bottom: 35px;
 }
 
+#home-cta-section {
+    background: rgb(1,77,147);
+    background: linear-gradient(260deg, rgba(1,77,147,1) 35%, rgba(5,175,242,1) 69%);
+}
+
+.home-cta-slogan {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.home-cta-icon {
+    max-width: 160px;
+}
+
+.home-cta-text-box {
+    text-align: center;
+}
+.home-cta-icon-box {
+    text-align: center;
+}
 
 
 /* 

@@ -34,7 +34,7 @@ get_header();?>
                         echo $value;?>
                     </h2>
                     <div class="separator-icon-box">
-                        <img class="separator-icon" src="assets/icons/heartbeat-solid.svg">
+                        <img class="separator-icon" src="<?php bloginfo('template_url'); ?>/assets/icons/heartbeat-solid.svg">
                     </div>
                     <p class="standard-text">
                         <?php $value = rwmb_meta( 'hmtp_mbtextarea_caregivers' );
