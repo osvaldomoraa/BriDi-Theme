@@ -85,16 +85,15 @@ Dividers
     width:100%;
     height:100px;
     left:0px;
-    background: linear-gradient(to right bottom, var(--brand-blue) 49%, #ffffff00 50%),    linear-gradient(-50deg, #ffffff 16px, #00000000 0);
+    background: linear-gradient(to right bottom, var(--brand-blue) 49%, #ffffff00 50%);
 }
 
 .divider-top-l{
     width:100%;
     height:100px;
     left:0px;
-    background: linear-gradient(to left bottom, var(--brand-blue) 49%, #ffffff00 50%),    linear-gradient(-50deg, #ffffff 16px, #00000000 0);
+    background: linear-gradient(to left bottom, var(--brand-blue) 49%, #ffffff00 50%);
 }
-
 
 .divider-bottom-r{
     width:100%;
@@ -147,6 +146,39 @@ Dividers
 
 .separator-icon-box:after {
     margin-left: 10px
+}
+
+.cta-divider-top-i{
+    width:100%;
+    height:50px;
+    left:0px;
+    background: linear-gradient(to left bottom, #FFFFFF25 49%, #ffffff00 50%);
+}
+
+.cta-divider-bottom-i{
+    width:100%;
+    height:50px;
+    left:0px;
+    background: linear-gradient(to left bottom, #ffffff00 49%, #FFFFFF25 50%);
+}
+
+.cta-divider-top-o{
+    width:100%;
+    height:50px;
+    left:0px;
+    background: linear-gradient(to right bottom, #FFFFFF 49%, #ffffff00 50%);
+}
+
+.cta-divider-bottom-o{
+    width:100%;
+    height:50px;
+    left:0px;
+    background: linear-gradient(to right bottom, #ffffff00 49%, #FFFFFF 50%);
+}
+
+.cta-divider-box {
+    background: rgb(159,188,214);
+    background: linear-gradient(260deg, rgba(159,188,214,1) 35%, rgba(161,225,250,1) 69%);
 }
 
 /* 
