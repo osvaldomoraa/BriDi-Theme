@@ -262,10 +262,45 @@ Sections
 .home-cta-text-box {
     text-align: center;
 }
+
 .home-cta-icon-box {
     text-align: center;
 }
 
+#methodology-section {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.methodology-image {
+    max-width: 100%;
+}
+
+.methodology-icon-box {
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 15px;
+    margin: auto;
+    max-width: 65px;
+}
+
+.methodology-text-box {
+    background-color: var(--brand-green);
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.methodology-text-box h4 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.methodology-text-box p {
+    color: #FFFFFF;
+}
 
 /* 
 Responsive
