@@ -81,32 +81,60 @@ nav { /*To de removed */
 Dividers 
 */
 
-.divider-top-r{
+.divider-h-top-r{
     width:100%;
     height:100px;
     left:0px;
     background: linear-gradient(to right bottom, var(--brand-blue) 49%, #ffffff00 50%);
 }
 
-.divider-top-l{
+.divider-h-top-l{
     width:100%;
     height:100px;
     left:0px;
     background: linear-gradient(to left bottom, var(--brand-blue) 49%, #ffffff00 50%);
 }
 
-.divider-bottom-r{
+.divider-h-bottom-r{
     width:100%;
     height:100px;
     left:0px;
     background: linear-gradient(to left bottom, #ffffff00 49%, var(--brand-blue) 50%);
 }
 
-.divider-bottom-l{
+.divider-h-bottom-l{
     width:100%;
     height:100px;
     left:0px;
     background: linear-gradient(to right bottom, #ffffff00 49%, var(--brand-blue) 50%);
+}
+
+.divider-b-top-r{
+    width:100%;
+    height:100px;
+    left:0px;
+    background: linear-gradient(to right bottom, var(--brand-light-blue) 49%, #ffffff00 50%);
+}
+
+.divider-b-top-l{
+    width:100%;
+    height:100px;
+    left:0px;
+    background: linear-gradient(to left bottom, var(--brand-light-blue) 49%, #ffffff00 50%);
+}
+
+.divider-b-bottom-r{
+    width:100%;
+    height:100px;
+    left:0px;
+    background: linear-gradient(to left bottom, #ffffff00 49%, var(--brand-light-blue) 50%);
+}
+
+.divider-b-bottom-l{
+    width:100%;
+    height:100px;
+    left:0px;
+    background: linear-gradient(to right bottom, #ffffff00 49%, var(--brand-light-blue) 50%);
 }
 
 .nav-divider {
@@ -181,6 +209,15 @@ Dividers
     background: linear-gradient(260deg, rgba(159,188,214,1) 35%, rgba(161,225,250,1) 69%);
 }
 
+.main-button {
+    font-size: 1.8rem;
+    background-color: var(--brand-green);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 /* 
 Sections
 */
@@ -222,7 +259,7 @@ Sections
     padding: 40px;
 }
 
-.about-text-box h4 {
+.about-text-box h3 {
     color: #FFFFFF;
     margin-bottom: 15px;
     font-size: 2rem;
@@ -283,6 +320,7 @@ Sections
     padding: 15px;
     margin: auto;
     max-width: 65px;
+    margin-bottom: 10px;
 }
 
 .methodology-text-box {
@@ -292,7 +330,7 @@ Sections
     margin-bottom: 20px;
 }
 
-.methodology-text-box h4 {
+.methodology-text-box h3 {
     color: #FFFFFF;
     margin-bottom: 15px;
     font-size: 2rem;
@@ -300,6 +338,37 @@ Sections
 
 .methodology-text-box p {
     color: #FFFFFF;
+}
+
+#objcetives-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.objectives-heading-box {
+    margin-bottom: 30px;
+}
+
+.objectives-box {
+    padding: 25px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.objectives-box h3 {
+    text-align: center;
+}
+
+.objectives-icon {
+    max-width: 60px;
+}
+
+.objectives-icon-box {
+    text-align: center;
+}
+
+#objcetives-section button {
+    margin-top: 50px;
 }
 
 /* 
