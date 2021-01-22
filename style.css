@@ -223,6 +223,16 @@ Dividers
 Sections
 */
 
+#navbarSupportedContent a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--brand-blue);
+}
+
+.site-logo {
+    max-width: 150px;
+}
+
 #hero-section {
     background-image: url("assets/img/hero-background.jpg");
     min-height: 90vh;
@@ -424,6 +434,30 @@ Sections
 
 .caregiver-photo {
     max-width: 70px;
+}
+
+.caregiver-name {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--brand-blue);
+}
+
+.caregiver-charge {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.caregiver-photo-box {
+    text-align: right;
+}
+
+#contact-section {
+    background-color: var(--brand-light-blue);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 
