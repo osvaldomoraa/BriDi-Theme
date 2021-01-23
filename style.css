@@ -468,6 +468,23 @@ Responsive
 */
 
 @media (max-width: 992px) {
+
+    #navbarSupportedContent {
+        margin-top: -2px;
+        background-color: #FFFFFF;
+        text-align: center;
+        z-index: 10;
+    }
+    #navbarSupportedContent a:hover {
+        color: #FFFFFF;
+        background-color: var(--brand-light-blue);
+    }
+    .navbar-toggler-icon {
+        color: var(--brand-blue);
+    }
+    .site-logo {
+        margin-left: 50px;
+    }
     #hero-section {
         padding-top: 25px;
     }
@@ -478,9 +495,32 @@ Responsive
     .about-text-box {
         padding: 20px;
     }
+    .home-cta-slogan {
+        font-size: 3rem;
+    }
+    .home-cta-icon {
+        max-width: 100px;
+    }
+    .methodology-text-box {
+        padding: 20px;
+    }
+    .methodology-icon-box {
+        padding: 10px;
+        max-width: 55px;
+        margin-bottom: 10px;
+    }
+    .methodology-image-box {
+        margin-bottom: 35px;
+    }
+    .objectives-box{
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 768px) {
+    .site-logo {
+        margin-left: 25px;
+    }
     #hero-section {
         padding-top: 0px;
     }
@@ -519,5 +559,20 @@ Responsive
     }
     .about-text-box {
         margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    .home-cta-slogan {
+        font-size: 2rem;
+    }
+    .home-cta-icon {
+        max-width: 60px;
+    }
+    .container {
+        max-width: 90vw;
     }
 }
