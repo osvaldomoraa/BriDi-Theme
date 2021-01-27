@@ -219,6 +219,10 @@ Dividers
     padding-bottom: 5px;
 }
 
+.divider-wrapper {
+    width: 100vw;
+}
+
 /* 
 Sections
 */
@@ -235,13 +239,9 @@ Sections
 
 #hero-section {
     background-image: url("assets/img/hero-background.jpg");
-    min-height: 90vh;
-    padding-top: 50px;
 }
 
-.hero-text-box {
-    padding: 30px;
-}
+
 
 .hero-title {
     color: #ffffff;
@@ -282,6 +282,7 @@ Sections
 
 .about-image {
     max-height: 250px;
+    max-width: 100%;
 }
 
 .about-image-box {
@@ -458,6 +459,18 @@ Sections
     background-color: var(--brand-light-blue);
     padding-top: 50px;
     padding-bottom: 50px;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+}
+
+#contact-section .form-control {
+    background-color: var(--brand-light-blue);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+#contact-section .standard-title, #contact-section .standard-text {
+    color: #FFFFFF;
 }
 
 
@@ -484,9 +497,6 @@ Responsive
     }
     .site-logo {
         margin-left: 50px;
-    }
-    #hero-section {
-        padding-top: 25px;
     }
     .hero-text-box {
         padding-right: 0px;
@@ -521,17 +531,11 @@ Responsive
     .site-logo {
         margin-left: 25px;
     }
-    #hero-section {
-        padding-top: 0px;
-    }
     .hero-title {
         font-size: 3.5rem;
     }    
     .hero-text {
         font-size: var(--paragraph-font-m);
-    }
-    .hero-video-box {
-        margin-bottom: 25px;
     }
     .dark-title {
         font-size: var(--title-font-m);
@@ -563,6 +567,10 @@ Responsive
 }
 
 @media (max-width: 576px) {
+    .col-12 {
+        border: solid;
+
+    }
     .hero-title {
         font-size: 3rem;
     }
@@ -572,7 +580,5 @@ Responsive
     .home-cta-icon {
         max-width: 60px;
     }
-    .container {
-        max-width: 90vw;
-    }
+
 }
