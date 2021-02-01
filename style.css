@@ -681,7 +681,6 @@ Responsive
 }
 
 @media (max-width: 575px) {
-    }
     .hero-title {
         font-size: 3rem;
     }
