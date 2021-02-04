@@ -199,6 +199,10 @@ Sections
     color: var(--brand-blue);
 }
 
+#navbarSupportedContent ul {
+    list-style: none;    
+}
+
 #navbarSupportedContent a:hover {
     color: var(--brand-light-blue);
 }
