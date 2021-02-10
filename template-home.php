@@ -1,5 +1,5 @@
 <?php 
-//Template Name: Pagina de inicio2
+//Template Name: Pagina de inicio
 get_header();?>
 
 <main>
@@ -14,18 +14,22 @@ get_header();?>
                 <div class="col-12 col-lg-6">
                     <div class="hero-text-box">
                         <h2 class="hero-title">
-                            <?php $value = rwmb_meta( 'hmtp_mbtitle_about' );
-                            echo $value;?>
+                            <?php
+                                $htmb_cmb2_title_about = get_post_meta( get_the_ID(), 'htmb_cmb2_title_about', true );
+                                echo esc_html( $htmb_cmb2_title_about );
+                            ?>
                         </h2>
                         <p class="hero-text">
-                            <?php $value = rwmb_meta( 'hmtp_mbtextarea_about' );
-                            echo $value;?>
+                            <?php
+                                $htmb_cmb2_text_about = get_post_meta( get_the_ID(), 'htmb_cmb2_text_about', true );
+                                echo esc_html( $htmb_cmb2_text_about );
+                            ?>
                         </p>
                     </div>                        
                 </div>
                 <div class="col-12 col-lg-6 ">
                     <div class="hero-video-box embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item hero-video" src="<?php $url = rwmb_get_value( 'hmtp_mbvideo_about' ); echo $url; ?>" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item hero-video" src="<?php $htmb_cmb2_video_about = get_post_meta( get_the_ID(), 'htmb_cmb2_video_about', true ); echo esc_url( $htmb_cmb2_video_about ); ?>" allowfullscreen></iframe>
                     </div>                        
                 </div>
             </div>
@@ -43,15 +47,19 @@ get_header();?>
                 <div class="col-12">
                     <div class="about-heading-box">
                         <h2 class="standard-title">
-                            <?php $value = rwmb_meta( 'hmtp_mbtitle_caregivers' );
-                            echo $value;?>
+                            <?php
+                                $htmb_cmb2_title_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_title_caregivers', true );
+                                echo esc_html( $htmb_cmb2_title_caregivers );
+                            ?>
                         </h2>
                         <div class="separator-icon-box">
                             <img class="separator-icon" src="<?php bloginfo('template_url'); ?>/assets/icons/heartbeat.svg">
                         </div>
                         <p class="standard-text">
-                            <?php $value = rwmb_meta( 'hmtp_mbtextarea_caregivers' );
-                            echo $value;?>
+                            <?php
+                                $htmb_cmb2_text_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_text_caregivers', true );
+                                echo esc_html( $htmb_cmb2_text_caregivers );
+                            ?>
                         </p>
                     </div>                        
                 </div>
@@ -60,46 +68,44 @@ get_header();?>
                 <div class="col-12 col-md-8 col-lg-6">
                     <div class="about-text-box">
                         <h3 class="box-title">
-                            <?php $value = rwmb_meta( 'hmtp_mbtitle_card1_caregivers' );
-                            echo $value;?>
+                            <?php
+                                $htmb_cmb2_title_card1_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_title_card1_caregivers', true );
+                                echo esc_html( $htmb_cmb2_title_card1_caregivers );
+                            ?>
                         </h3>
                         <p class="box-text">
-                            <?php $value = rwmb_meta( 'hmtp_mbtextarea_card1_caregivers' );
-                            echo $value;?>
+                            <?php
+                                $htmb_cmb2_text_card1_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_text_card1_caregivers', true );
+                                echo esc_html( $htmb_cmb2_text_card1_caregivers );
+                            ?>
                         </p>
                     </div>                        
                 </div>
                 <div class="col-12 col-md-4 col-lg-6">
                     <figure class="about-image-box">
-                        <?php $images = rwmb_meta( 'hmtp_mbimage_card1_caregivers', array( 
-                            'limit' => 1,
-                            'size' => 'full-size',
-                            ) );
-                        $image = reset( $images );?>
-                        <img class="about-image" src="<?php echo $image['url']; ?>">
+                        <img class="about-image" src="<?php $htmb_cmb2_image_card1_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_image_card1_caregivers', true ); echo esc_url( $htmb_cmb2_image_card1_caregivers ); ?>">
                     </figure>
                 </div>                    
             </div>
             <div class="about-row row align-items-center justify-content-center">
                 <div class="col-12 col-md-4 col-lg-6 order-2 order-md-1">
                     <figure class="about-image-box">
-                        <?php $images = rwmb_meta( 'hmtp_mbimage_card2_caregivers', array( 
-                            'limit' => 1,
-                            'size' => 'full-size',
-                            ) );
-                        $image = reset( $images );?>
-                        <img class="about-image" src="<?php echo $image['url']; ?>">
+                        <img class="about-image" src="<?php $htmb_cmb2_image_card2_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_image_card2_caregivers', true ); echo esc_url( $htmb_cmb2_image_card2_caregivers ); ?>">
                     </figure>
                 </div>
                 <div class="col-12 col-md-8 col-lg-6 order-1 order-md-2">
                     <div class="about-text-box">
                         <h3 class="box-title">
-                            <?php $value = rwmb_meta( 'hmtp_mbtitle_card2_caregivers' );
-                            echo $value;?>
+                            <?php
+                                $htmb_cmb2_title_card2_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_title_card2_caregivers', true );
+                                echo esc_html( $htmb_cmb2_title_card2_caregivers );
+                            ?>
                         </h3>
                         <p class="box-text">
-                            <?php $value = rwmb_meta( 'hmtp_mbtextarea_card2_caregivers' );
-                            echo $value;?>
+                            <?php
+                                $htmb_cmb2_text_card2_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_text_card2_caregivers', true );
+                                echo esc_html( $htmb_cmb2_text_card2_caregivers );
+                            ?>
                         </p>
                     </div>
                 </div>                    
@@ -108,23 +114,22 @@ get_header();?>
                 <div class="col-12 col-md-8 col-lg-6">
                     <div class="about-text-box">
                         <h3 class="box-title">
-                            <?php $value = rwmb_meta( 'hmtp_mbtitle_card3_caregivers' );
-                            echo $value;?>
+                            <?php
+                                $htmb_cmb2_title_card3_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_title_card3_caregivers', true );
+                                echo esc_html( $htmb_cmb2_title_card3_caregivers );
+                            ?>
                         </h3>
                         <p class="box-text">
-                            <?php $value = rwmb_meta( 'hmtp_mbtextarea_card3_caregivers' );
-                            echo $value;?>
+                            <?php
+                                $htmb_cmb2_text_card3_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_text_card3_caregivers', true );
+                                echo esc_html( $htmb_cmb2_text_card3_caregivers );
+                            ?>
                         </p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-6">
                     <figure class="about-image-box">
-                        <?php $images = rwmb_meta( 'hmtp_mbimage_card3_caregivers', array( 
-                            'limit' => 1,
-                            'size' => 'full-size',
-                            ) );
-                        $image = reset( $images );?>
-                        <img class="about-image" src="<?php echo $image['url']; ?>">
+                        <img class="about-image" src="<?php $htmb_cmb2_image_card3_caregivers = get_post_meta( get_the_ID(), 'htmb_cmb2_image_card3_caregivers', true ); echo esc_url( $htmb_cmb2_image_card3_caregivers ); ?>">
                     </figure>
                 </div>
             </div>
@@ -140,13 +145,16 @@ get_header();?>
                     <div class="home-cta row align-items-center">
                         <div class="col-3">
                             <figure class="home-cta-icon-box">
-                                <img class="home-cta-icon" src="assets/icons/heartbeat-opacity.svg">
+                                <img class="home-cta-icon" src="<?php $htmb_cmb2_image_slogan = get_post_meta( get_the_ID(), 'htmb_cmb2_image_slogan', true ); echo esc_url( $htmb_cmb2_image_slogan ); ?>">
                             </figure>
                         </div>
                         <div class="col-9">
                             <div class="home-cta-text-box">
                                 <span class="home-cta-slogan">
-                                    Cuidamos de los que cuidan de otros
+                                    <?php
+                                        $htmb_cmb2_title_slogan = get_post_meta( get_the_ID(), 'htmb_cmb2_title_slogan', true );
+                                        echo esc_html( $htmb_cmb2_title_slogan );
+                                    ?>
                                 </span>
                             </div>
                         </div>                        
@@ -164,13 +172,16 @@ get_header();?>
                     <div class="col-12 col-md-6 col-lg-4 order-1">
                         <div class="methodology-heading-box">
                             <h2 class="standard-title">
-                                Nuestra forma de trabajar
+                                <?php
+                                    $htmb_cmb2_title_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_title_methodology', true );
+                                    echo esc_html( $htmb_cmb2_title_methodology );
+                                ?>
                             </h2>
                             <div class="separator-icon-box">
-                                <img class="separator-icon" src="assets/icons/heartbeat.svg">
+                                <img class="separator-icon" src="<?php bloginfo('template_url'); ?>/assets/icons/heartbeat.svg">
                             </div>
                             <figure class="methodology-image-box">
-                                <img class="methodology-image" src="assets/img/team.jpg">
+                                <img class="methodology-image" src="<?php $htmb_cmb2_image_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_image_methodology', true ); echo esc_url( $htmb_cmb2_image_methodology ); ?>">
                             </figure>
                         </div>
                     </div>                    
@@ -179,30 +190,38 @@ get_header();?>
                             <div class="col-12 col-md-6 col-lg-12">
                                 <div class="methodology-text-box">
                                     <figure class="methodology-icon-box">
-                                        <img class="methodology-icon" src="assets/icons/presentation.svg">
+                                        <img class="methodology-icon" src="<?php $htmb_cmb2_image_card1_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_image_card1_methodology', true ); echo esc_url( $htmb_cmb2_image_card1_methodology ); ?>">
                                     </figure>
                                     <h3 class="box-title">
-                                        Los talleres
+                                        <?php
+                                            $htmb_cmb2_title_card1_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_title_card1_methodology', true );
+                                            echo esc_html( $htmb_cmb2_title_card1_methodology );
+                                        ?>
                                     </h3>
                                     <p class="box-text">
-                                        Hemos diseñado una serie de talleres divididos en 5 módulos temáticos: sueño, alimentación, nutrición, estrés y emociones.
-            
-                                        Los talleres que impartimos son una experiencia teórico-práctica en la que combinamos información relevante, sensibilización y entrenamiento de habilidades específicas.
+                                        <?php
+                                            $htmb_cmb2_text_card1_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_text_card1_methodology', true );
+                                            echo esc_html( $htmb_cmb2_text_card1_methodology );
+                                        ?>                                        
                                     </p>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-12">
                                 <div class="methodology-text-box">
                                     <figure class="methodology-icon-box">
-                                        <img class="methodology-icon" src="assets/icons/calendar.svg">
+                                        <img class="methodology-icon" src="<?php $htmb_cmb2_image_card2_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_image_card2_methodology', true ); echo esc_url( $htmb_cmb2_image_card2_methodology ); ?>">
                                     </figure>
                                     <h3 class="box-title">
-                                        Los efectos
+                                        <?php
+                                            $htmb_cmb2_title_card2_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_title_card2_methodology', true );
+                                            echo esc_html( $htmb_cmb2_title_card2_methodology );
+                                        ?>
                                     </h3>
                                     <p class="box-text">
-                                        En los talleres pretendemos brindar acompañamiento y un ambiente emocional necesario para que los cuidadores vivan una experiencia que les permita desarrollar resiliencia y asimilar las herramientas proporcionadas en su dia a dia.
-            
-                                        Para ello utilizamos los últimos avances científicos, principalmente teorías de la Psicología Social y las mejores técnicas en el procesamiento de datos
+                                        <?php
+                                            $htmb_cmb2_text_card2_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_text_card2_methodology', true );
+                                            echo esc_html( $htmb_cmb2_text_card2_methodology );
+                                        ?> 
                                     </p>
                                 </div>
                             </div>
@@ -211,13 +230,19 @@ get_header();?>
                     <div class="col-12 col-md-6 col-lg-4 order-3 order-md-2 order-lg-3">
                         <div class="methodology-text-box">
                             <figure class="methodology-icon-box">
-                                <img class="methodology-icon" src="assets/icons/stethoscope.svg">
+                                <img class="methodology-icon" src="<?php $htmb_cmb2_image_card3_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_image_card3_methodology', true ); echo esc_url( $htmb_cmb2_image_card3_methodology ); ?>">
                             </figure>
                             <h3 class="box-title">
-                                El momento ideal
+                                <?php
+                                    $htmb_cmb2_title_card2_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_title_card3_methodology', true );
+                                    echo esc_html( $htmb_cmb2_title_card2_methodology );
+                                ?>
                             </h3>
                             <p class="box-text">
-                                Usualmente los cuidadores son quienes acompañan al paciente a sus consultas de seguimiento y, mientras ellos esperan largo tiempo, nosotros vemos una buena ocasión para implementar nuestros talleres como una forma de medicina preventiva, de la mano de los hospitales que nos abren sus puertas.                        
+                                <?php
+                                    $htmb_cmb2_text_card2_methodology = get_post_meta( get_the_ID(), 'htmb_cmb2_text_card3_methodology', true );
+                                    echo esc_html( $htmb_cmb2_text_card2_methodology );
+                                ?>                       
                             </p>
                         </div>
                     </div>
@@ -236,13 +261,19 @@ get_header();?>
                     <div class="col">
                         <div class="objectives-heading-box">
                             <h2 class="standard-title">
-                                Nuestros objetivos
+                                <?php
+                                    $htmb_cmb2_title_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_title_objetives', true );
+                                    echo esc_html( $htmb_cmb2_title_objetives );
+                                ?>
                             </h2>
                             <div class="separator-icon-box">
-                                <img class="separator-icon" src="assets/icons/heartbeat.svg">
+                                <img class="separator-icon" src="<?php bloginfo('template_url'); ?>/assets/icons/heartbeat.svg">
                             </div>
-                            <p class="standard-text">                        
-                            Nuestro proyecto evoluciona constantemente, es por ello que tenemos una ambiciosa lista de objetivos. Esta lista la actualizamos continuamente, ya sea agregando nuevas metas o marcando con entusiasmo las que ya hemos completado. En este sentido, las más recientes son:
+                            <p class="standard-text">
+                                <?php
+                                    $htmb_cmb2_text_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_text_objetives', true );
+                                    echo esc_html( $htmb_cmb2_text_objetives );
+                                ?>                        
                             </p>
                         </div>
                     </div>                    
@@ -251,39 +282,57 @@ get_header();?>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="objectives-box">
                             <figure class="objectives-icon-box">
-                                <img class="objectives-icon" src="assets/icons/analysis.svg">
+                                <img class="objectives-icon" src="<?php $htmb_cmb2_image_card1_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_image_card1_objetives', true ); echo esc_url( $htmb_cmb2_image_card1_objetives ); ?>">
                             </figure>
                             <h3 class="box-title">
-                                Consolidar un modelo
+                                <?php
+                                    $htmb_cmb2_title_card1_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_title_card1_objetives', true );
+                                    echo esc_html( $htmb_cmb2_title_card1_objetives );
+                                ?>
                             </h3>
                             <p class="box-text">
-                                Pretendemos que el modelo utilizado madure lo suficiente para ser replicable en cualquier hospital del país, sin importar quien lo aplique.
+                                <?php
+                                    $htmb_cmb2_text_card1_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_text_card1_objetives', true );
+                                    echo esc_html( $htmb_cmb2_text_card1_objetives );
+                                ?> 
                             </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="objectives-box">
                             <figure class="objectives-icon-box">
-                                <img class="objectives-icon" src="assets/icons/smartphone.svg">
+                                <img class="objectives-icon" src="<?php $htmb_cmb2_image_card2_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_image_card2_objetives', true ); echo esc_url( $htmb_cmb2_image_card2_objetives ); ?>">
                             </figure>
                             <h3 class="box-title">
-                                APP movil
+                                <?php
+                                    $htmb_cmb2_title_card2_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_title_card2_objetives', true );
+                                    echo esc_html( $htmb_cmb2_title_card2_objetives );
+                                ?>
                             </h3>
                             <p class="box-text">
-                                Una de nuestras metas a corto plazo es desarrollar una aplicación para dispositivos móviles que sirva de acompañamiento a los cuidadores en su día a día, refuerce los aprendizajes y nos ayude a llevar un mejor seguimiento de sus casos.
+                                <?php
+                                    $htmb_cmb2_text_card2_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_text_card2_objetives', true );
+                                    echo esc_html( $htmb_cmb2_text_card2_objetives );
+                                ?>
                             </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="objectives-box">
                             <figure class="objectives-icon-box">
-                                <img class="objectives-icon" src="assets/icons/book.svg">
+                                <img class="objectives-icon" src="<?php $htmb_cmb2_image_card3_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_image_card3_objetives', true ); echo esc_url( $htmb_cmb2_image_card3_objetives ); ?>">
                             </figure>
                             <h3 class="box-title">
-                                Articulo cientifico
+                                <?php
+                                    $htmb_cmb2_title_card3_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_title_card3_objetives', true );
+                                    echo esc_html( $htmb_cmb2_title_card3_objetives );
+                                ?>
                             </h3>
                             <p class="box-text">
-                                Tenemos amor y compromiso con la ciencia, es por ello que, con la investigación que hacemos de nuestro modelo, queremos publicar un amplio articulo para divulgar nuestros hallazgos y contribuir al avance de la ciencia.
+                                <?php
+                                    $htmb_cmb2_text_card3_objetives = get_post_meta( get_the_ID(), 'htmb_cmb2_text_card3_objetives', true );
+                                    echo esc_html( $htmb_cmb2_text_card3_objetives );
+                                ?>
                             </p>
                         </div>
                     </div>
@@ -303,99 +352,57 @@ get_header();?>
                     <div class="col">
                         <div class="team-heading-box">
                             <h2 class="standard-title">
-                                Nuestro equipo
+                                <?php
+                                    $htmb_cmb2_title_team = get_post_meta( get_the_ID(), 'htmb_cmb2_title_team', true );
+                                    echo esc_html( $htmb_cmb2_title_team );
+                                ?>
                             </h2>
                             <div class="separator-icon-box">
-                                <img class="separator-icon" src="assets/icons/heartbeat.svg">
+                                <img class="separator-icon" src="<?php bloginfo('template_url'); ?>/assets/icons/heartbeat.svg">
                             </div>
                             <p class="standard-text">
-                                Tenemos un increíble equipo de personas llenas de talento, compromiso y con un corazón enorme, pero sobre todo, que creen en lo que estamos haciendo.
+                                <?php
+                                    $htmb_cmb2_text_team = get_post_meta( get_the_ID(), 'htmb_cmb2_text_team', true );
+                                    echo esc_html( $htmb_cmb2_team );
+                                ?>   
                             </p>
                         </div>
                     </div>                                    
                 </div>
                 <div class="row">
+                    <?php
+                        $entries = get_post_meta( get_the_ID(), 'team_members_block', true );
+                        foreach ( (array) $entries as $key => $entry ) {
+                            $name = $role = $photo = '';
+                    
+                            if ( isset( $entry['htmb_cmb2_title_member_team'] ) ) {
+                                $name = esc_html( $entry['htmb_cmb2_title_member_team'] );
+                            }
+                        
+                            if ( isset( $entry['htmb_cmb2_role_member_team'] ) ) {
+                                $role = esc_html( $entry['htmb_cmb2_role_member_team'] );
+                            }
+                        
+                            if ( isset( $entry['htmb_cmb2_image_member_team'] ) ) {
+                                $photo = esc_url( $entry['htmb_cmb2_image_member_team'] );
+                            }
+                    ?>
                     <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                         <div class="team-member-box">
                             <figure class="team-photo-box">
-                                <img class="team-photo rounded-circle" src="assets/img/member-team.jpg">
+                                <img class="team-photo rounded-circle" src="<?php echo $photo; ?>">
                             </figure>
                             <span class="member-name">
-                                Osvaldo Mora
+                                <?php echo $name; ?> 
                             </span>
                             <span class="member-charge">
-                                Cordinador
+                            <?php echo $role; ?>
                             </span>
                         </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="team-member-box">
-                            <figure class="team-photo-box">
-                                <img class="team-photo rounded-circle" src="assets/img/member-team.jpg">
-                            </figure>
-                            <span class="member-name">
-                                Osvaldo Mora
-                            </span>
-                            <span class="member-charge">
-                                Cordinador
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="team-member-box">
-                            <figure class="team-photo-box">
-                                <img class="team-photo rounded-circle" src="assets/img/member-team.jpg">
-                            </figure>
-                            <span class="member-name">
-                                Osvaldo Mora
-                            </span>
-                            <span class="member-charge">
-                                Cordinador
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="team-member-box">
-                            <figure class="team-photo-box">
-                                <img class="team-photo rounded-circle" src="assets/img/member-team.jpg">
-                            </figure>
-                            <span class="member-name">
-                                Osvaldo Mora
-                            </span>
-                            <span class="member-charge">
-                                Cordinador
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="team-member-box">
-                            <figure class="team-photo-box">
-                                <img class="team-photo rounded-circle" src="assets/img/member-team.jpg">
-                            </figure>
-                            <span class="member-name">
-                                Osvaldo Mora
-                            </span>
-                            <span class="member-charge">
-                                Cordinador
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="team-member-box">
-                            <figure class="team-photo-box">
-                                <img class="team-photo rounded-circle" src="assets/img/member-team.jpg">
-                            </figure>
-                            <span class="member-name">
-                                Osvaldo Mora
-                            </span>
-                            <span class="member-charge">
-                                Cordinador
-                            </span>
-                        </div>
-                    </div>
+                    </div>                    
+                    <?php } ?>
                 </div>
-            </div>
-            
+            </div>            
         </section>
 
         <div class="divider-wrapper">
@@ -407,12 +414,15 @@ get_header();?>
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-12">
-                        <div class="objectives-heading-box">
+                        <div class="testimonials-heading-box">
                             <h2 class="standard-title">
-                                Comentarios de los cuidadores
+                                <?php
+                                    $htmb_cmb2_title_testimonials = get_post_meta( get_the_ID(), 'htmb_cmb2_title_testimonials', true );
+                                    echo esc_html( $htmb_cmb2_title_testimonials );
+                                ?>
                             </h2>
                             <div class="separator-icon-box">
-                                <img class="separator-icon" src="assets/icons/heartbeat.svg">
+                                <img class="separator-icon" src="<?php bloginfo('template_url'); ?>/assets/icons/heartbeat.svg">
                             </div>
                         </div>
                     </div>                    
@@ -421,7 +431,10 @@ get_header();?>
                     <div class="col">
                         <div class="testimonial-bubble-text">
                             <p>
-                                "... porque si tu no eres positivo, si no eres fuerte, si no te cuidas a ti mismo, no vas a poder cuidar a alguien."
+                                <?php
+                                    $htmb_cmb2_bubble_text_testimonials = get_post_meta( get_the_ID(), 'htmb_cmb2_bubble_text_testimonials', true );
+                                    echo esc_html( $htmb_cmb2_bubble_text_testimonials );
+                                ?>
                             </p>
                         </div>
                     </div>                    
@@ -430,14 +443,20 @@ get_header();?>
                     <div class="col">
                         <div class="caregiver-details d-flex justify-content-center align-items-center">
                             <div class="caregiver-photo-box">
-                                <img class="caregiver-photo rounded-circle" src="assets/img/caregiver.jpg">
+                                <img class="caregiver-photo rounded-circle" src="<?php $htmb_cmb2_photo_caregiver_testimonials = get_post_meta( get_the_ID(), 'htmb_cmb2_photo_caregiver_testimonials', true ); echo esc_url( $htmb_cmb2_photo_caregiver_testimonials ); ?>">
                             </div>
                             <div class="caregiver-text-box">
                                 <span class="caregiver-name">
-                                    Miguel Mendoza
+                                    <?php
+                                        $htmb_cmb2_name_caregiver_testimonials = get_post_meta( get_the_ID(), 'htmb_cmb2_name_caregiver_testimonials', true );
+                                        echo esc_html( $htmb_cmb2_name_caregiver_testimonials );
+                                    ?>
                                 </span>
                                 <span class="caregiver-charge">
-                                   Cuidador
+                                    <?php
+                                        $htmb_cmb2_role_caregiver_testimonials = get_post_meta( get_the_ID(), 'htmb_cmb2_role_caregiver_testimonials', true );
+                                        echo esc_html( $htmb_cmb2_role_caregiver_testimonials );
+                                    ?>
                                 </span>
                             </div>
                         </div>

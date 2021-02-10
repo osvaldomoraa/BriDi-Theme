@@ -48,6 +48,7 @@ function register_navwalker(){
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
 
+require_once __DIR__ . '/vendor/cmb2/init.php';
 
 add_action('widgets_init','registrar_sidebar');
 
@@ -66,4 +67,3 @@ require_once('features/forms/user-register.php');
 require_once('features/user-fields.php');
 
 require_once('features/forms/pretest-sleeping.php');
-
