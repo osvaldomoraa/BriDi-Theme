@@ -1,50 +1,40 @@
 <?php 
 
-add_filter( 'rwmb_meta_boxes', 'sesiones_register_meta_boxes' );
+add_action( 'cmb2_init', 'sesiones_register_meta_boxes' );
+function sesiones_register_meta_boxes() {
 
-function sesiones_register_meta_boxes( $meta_boxes ) {
-    $prefix = 'ses-mb';
+	$prefix = 'ses_mb';
 
-    $meta_boxes[] = [
-        'title'      => esc_html__( 'Detalles de la sesion', 'sesiones-metabox' ),
-        'id'         => 'sesiones-main',
-        'post_types' => ['sesion'],
-        'context'    => 'normal',
-        'priority'   => 'high',
-        'fields'     => [
-            [
-                'type' => 'heading',
-                'name' => esc_html__( 'Contenido principal', 'sesiones-metabox' ),
-            ],
-            [
-                'type' => 'oembed',
-                'name' => esc_html__( 'URL del video', 'sesiones-metabox' ),
-                'id'   => $prefix . 'oembed_video',
-            ],
-            [
-                'type' => 'file_input',
-                'id'   => $prefix . 'file_input_audio',
-                'name' => esc_html__( 'Archivo de audio', 'sesiones-metabox' ),
-            ],
-            [
-                'type' => 'file_input',
-                'id'   => $prefix . 'file_input_slides',
-                'name' => esc_html__( 'Archivo de diapositivas', 'sesiones-metabox' ),
-            ],
-            [
-                'type' => 'divider',
-            ],
-            [
-                'type' => 'heading',
-                'name' => esc_html__( 'Otros detalles', 'sesiones-metabox' ),
-            ],
-            [
-                'type' => 'file',
-                'id'   => $prefix . 'file_materials',
-                'name' => esc_html__( 'Materiales', 'sesiones-metabox' ),
-            ],
-        ],
-    ];
-    return $meta_boxes;
+	$cmb = new_cmb2_box( array(
+		'id'           => $prefix . 'sesiones-main',
+		'title'        => __( 'Detalles de la sesion', 'cmb2' ),
+		'object_types' => array( 'sesion' ),
+		'context'      => 'normal',
+		'priority'     => 'default',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'URL del video principal', 'cmb2' ),
+		'id' => $prefix . 'main_video',
+		'type' => 'text_url',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Archivo de audio principal', 'cmb2' ),
+		'id' => $prefix . 'main_audio',
+		'type' => 'file',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Archivo de diapositivas principal', 'cmb2' ),
+		'id' => $prefix . 'main_slides',
+		'type' => 'file',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Materiales', 'cmb2' ),
+		'id' => $prefix . 'file_materials',
+		'type' => 'file_list',
+	) );
 
 }
