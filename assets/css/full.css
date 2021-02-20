@@ -1,0 +1,712 @@
+/*
+Theme Name: BriDi
+Version: 1.0
+Description: Theme desarrollado a medida para los talleres en línea de Bienestar Psicosocial UAM – Iztapalapa
+Author: Osvaldo Mora   
+Author URI: https://amitts.com.mx/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* 
+Defaults 
+*/
+
+:root {
+    --brand-blue: #0487D9;
+    --brand-light-blue: #05AFF2;
+    --brand-green: #57A519;
+    --brand-light-green: #60BA1B;
+    --brand-gray: #4B4646;
+    --brand-light-gray: #A7A7B2;
+    --brand-yellow: #FFCD00;
+    --brand-orange: #FFA244;
+    --title-font-d: 3.5rem;
+    --title-font-m: 2.5rem;
+    --paragraph-font-d: 2rem;
+    --paragraph-font-m: 1.6rem;
+    --subtitle-font: 2.5rem;
+    --text-tiny-font: 1.6rem;
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Roboto Slab", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    line-height: 1.5;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.standard-title {
+    color: var(--brand-blue);
+    font-size: var(--title-font-d);
+    font-weight: 600;
+    text-align: center;
+}
+
+.standard-text {
+    color: var(--brand-gray);
+    font-size: var(--paragraph-font-d);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.box-title {
+    color: var(--brand-blue);
+    font-size: var(--subtitle-font);
+    font-weight: 600;
+    text-align: center;
+}
+
+.box-text {
+    color: var(--brand-gray);
+    font-size: var(--text-tiny-font);
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* 
+Dividers 
+*/
+
+.divider-h-p1 {
+    width:100%;
+    height:150px;
+    left:0px;
+    background: linear-gradient(to right bottom, #ffffff00 49%, var(--brand-blue) 50%);
+}
+
+.divider-h-p2 {
+    width:100%;
+    height:150px;
+    left:0px;
+    background: linear-gradient(to right bottom, var(--brand-blue) 49%, #ffffff00 50%);
+}
+
+.divider-b-p1 {
+    width:100%;
+    height:150px;
+    left:0px;
+    background: linear-gradient(to right bottom, #ffffff00 49%, var(--brand-light-blue) 50%);
+}
+
+.divider-b-p2 {
+    width:100%;
+    height:150px;
+    left:0px;
+    background: linear-gradient(to right bottom, var(--brand-light-blue) 49%, #ffffff00 50%);
+}
+
+.nav-divider {
+      background-color: var(--brand-light-blue);
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 15px solid #FFFFFF;
+}
+
+.separator-icon {
+    max-width: 25px;
+    text-align: center;
+}
+
+.separator-icon-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.separator-icon-box:before, .separator-icon-box:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid var(--brand-green);
+    margin: auto;
+}
+
+.separator-icon-box:before {
+    margin-right: 10px
+}
+
+.separator-icon-box:after {
+    margin-left: 10px
+}
+
+.cta-divider-top-p1 {
+    width:100%;
+    height:50px;
+    left:0px;
+    background: linear-gradient(to right bottom, #FFFFFF 49%, #ffffff00 50%);
+}
+
+.cta-divider-top-p2 {
+    width:100%;
+    height:50px;
+    left:0px;
+    background: linear-gradient(to left bottom, #FFFFFF25 49%, #ffffff00 50%);
+}
+
+.cta-divider-bottom-p1 {
+    width:100%;
+    height:50px;
+    left:0px;
+    background: linear-gradient(to left bottom, #ffffff00 49%, #FFFFFF25 50%);
+}
+
+.cta-divider-bottom-p2 {
+    width:100%;
+    height:50px;
+    left:0px;
+    background: linear-gradient(to right bottom, #ffffff00 49%, #FFFFFF 50%);
+}
+
+.cta-divider-box {
+    background: rgb(159,188,214);
+    background: linear-gradient(260deg, rgba(159,188,214,1) 35%, rgba(161,225,250,1) 69%);
+}
+
+.main-button {
+    font-size: 1.8rem;
+    background-color: var(--brand-green);
+    border-color: var(--brand-green);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.divider-wrapper {
+    width: 100%;
+}
+
+/* 
+Sections
+*/
+
+#navbarSupportedContent a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--brand-blue);
+}
+
+#navbarSupportedContent ul {
+    list-style: none;    
+}
+
+#navbarSupportedContent a:hover {
+    color: var(--brand-light-blue);
+}
+
+.site-logo {
+    max-width: 150px;
+}
+
+#hero-section {
+    background-image: url("assets/img/hero-background.jpg");
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero-text {
+    color: #ffffff;
+    font-size: var(--paragraph-font-d);
+    text-align: justify;
+}
+
+.hero-row {
+    min-height: 90vh;
+}
+
+#about-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-heading-box {
+    margin-bottom: 35px;
+}
+
+.about-text-box {
+    background-color: var(--brand-green);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.about-text-box h3 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.about-text-box p {
+    color: #FFFFFF;
+}
+
+.about-image {
+    max-height: 250px;
+    max-width: 100%;
+}
+
+.about-image-box {
+    text-align: center;
+}
+
+.about-row {
+    margin-bottom: 35px;
+}
+
+#home-cta-section {
+    background: rgb(1,77,147);
+    background: linear-gradient(260deg, rgba(1,77,147,1) 35%, rgba(5,175,242,1) 69%);
+}
+
+#home-cta-section .home-cta-slogan {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.home-cta-icon {
+    max-width: 160px;
+}
+
+.home-cta-text-box {
+    text-align: center;
+}
+
+.home-cta-icon-box {
+    text-align: center;
+}
+
+#methodology-section {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.methodology-image {
+    max-width: 100%;
+}
+
+.methodology-icon-box {
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 15px;
+    margin: auto;
+    max-width: 65px;
+    margin-bottom: 10px;
+}
+
+.methodology-text-box {
+    background-color: var(--brand-green);
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.methodology-text-box h3 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.methodology-text-box p {
+    color: #FFFFFF;
+}
+
+.objectives-row {
+    display: flex;
+}
+
+#objcetives-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.objectives-heading-box {
+    margin-bottom: 30px;
+}
+
+.objectives-box {
+    padding: 25px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.objectives-box h3 {
+    text-align: center;
+}
+
+.objectives-icon {
+    max-width: 60px;
+}
+
+.objectives-icon-box {
+    text-align: center;
+}
+
+#objcetives-section button {
+    margin-top: 50px;
+}
+
+#team-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.team-heading-box {
+    margin-bottom: 30px;
+}
+
+.team-member-box {
+    margin-bottom: 25px;
+}
+
+.team-photo {
+    max-width: 100%;
+    border-style: solid;
+    border-color: var(--brand-green);
+}
+
+.team-photo-box {
+    text-align: center;
+}
+
+.member-name {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--brand-blue);
+
+}
+
+.member-charge {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#testimonials-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.testimonial-bubble-text {
+    background-color: var(--brand-green);
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonial-bubble-text p {
+    color: #FFFFFF;
+    font-size: 2.1rem;
+}
+
+.caregiver-photo-box {
+    margin-right: 20px;
+}
+
+.caregiver-photo {
+    max-width: 60px;
+}
+
+.caregiver-name {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--brand-blue);
+}
+
+.caregiver-charge {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#contact-section {
+    background-color: var(--brand-light-blue);
+    padding-top: 50px;
+    padding-bottom: 70px;
+    font-size: 1.6rem;
+}
+
+.contact-heading-box {
+    margin-bottom: 30px;
+}
+
+#contact-section .standard-title {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#contact-section .standard-text {
+    color: #FFFFFF;
+}
+
+#home-contact {
+    color: #FFFFFF;
+}
+
+#home-contact .form-control {
+    background-color: var(--brand-light-blue);
+    padding: 10px;
+    border-color: #FFFFFF;
+    color: #FFFFFF75;
+    font-size: 1.6rem;
+}
+
+#home-contact ::placeholder {
+    font-size: 1.6rem;
+    color: #FFFFFF75;
+}
+
+#home-contact button {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    padding: 10px 35px 10px 35px;
+    color: var(--brand-light-blue);
+    font-size: 1.6rem;
+}
+
+footer {
+    color: #FFFFFF;
+}
+
+.uam-logo-box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.uam-logo {
+    width: 30%;
+}
+
+.social-media-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.8rem;
+    color: var(--brand-blue);
+    background-color: #FFFFFF;
+    padding: 8px 11px 8px 11px;
+}
+
+.footer-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer-column-box {
+    background-color: var(--brand-blue);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-column-box ul {
+    margin-top: 15px;
+    list-style-type: none;
+    font-size: 1.4rem;
+}
+
+.footer-column-box li {
+    margin-bottom: 5px;
+}
+
+.footer-column-box i {
+    font-size: 1.6rem;
+    margin-right: 7px;
+}
+
+.footer-copyright-box {
+    background-color: #0373af;
+}
+
+.footer-copyright {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* 
+Responsive
+*/
+
+@media (max-width: 991px) {
+
+    #navbarSupportedContent {
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+    #navbarSupportedContent a:hover {
+        color: #FFFFFF;
+        background-color: var(--brand-light-blue);
+    }
+    .navbar-toggler-icon {
+        color: var(--brand-blue);
+    }
+    .site-logo {
+        margin-left: 10px;
+    }
+    #about-section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .hero-text-box {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .about-text-box {
+        padding: 20px;
+    }
+    #home-cta-section .home-cta-slogan {
+        font-size: 3rem;
+    }
+    .home-cta-icon {
+        max-width: 70px;
+    }
+    #methodology-section {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .methodology-text-box {
+        padding: 20px;
+        height: 100%;
+    }
+    .methodology-icon-box {
+        padding: 10px;
+        max-width: 55px;
+        margin-bottom: 10px;
+    }
+    .methodology-image-box {
+        margin-bottom: 35px;
+    }
+    #objcetives-section {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .objectives-box {
+        margin-bottom: 30px;
+        min-height: 330px;
+    }
+    #team-section {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .team-photo {
+        max-width: 90%;
+    }
+    .footer-column {
+        margin-bottom: 50px;
+    }
+    .footer-column-box {
+        padding-bottom: 50px;
+    } 
+    #testimonials-section {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #contact-section {
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+    .footer-column-box {
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+    .divider-h-p1, .divider-h-p2, .divider-b-p1, .divider-b-p2 {
+        height:100px;
+    }    
+}
+
+@media (max-width: 767px) {
+    .site-logo {
+        margin-left: 5px;
+    }
+    .hero-title {
+        font-size: 3.5rem;
+    }    
+    .hero-text {
+        font-size: var(--paragraph-font-m);
+    }
+    .about-text-box {
+        margin-bottom: 25px;
+    }
+    .methodology-text-box {
+        min-height: unset;
+    }
+    .methodology-nesting-row .col-12 {
+        margin-bottom: 35px;
+    }
+    .objectives-box {
+        min-height: unset;
+    }
+    .dark-title {
+        font-size: var(--title-font-m);
+    }    
+    .dark-text {
+        font-size: var(--paragraph-font-m);
+    }
+    .standard-title {
+        font-size: var(--title-font-m);
+    }
+    .standard-text {
+        font-size: var(--paragraph-font-m);
+    }
+    .footer-title {
+        text-align: center;
+        display: block;
+    }
+    .cta-divider-top-p1, .cta-divider-top-p2, .cta-divider-bottom-p1, .cta-divider-bottom-p2 {
+        height:30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    .team-photo {
+        max-width: 70%;
+    }
+    #home-cta-section .home-cta-slogan {
+        font-size: 2rem;
+    }
+    .home-cta-icon {
+        max-width: 50px;
+    }
+    .divider-h-p1, .divider-h-p2, .divider-b-p1, .divider-b-p2 {
+        height:50px;
+    } 
+}
+
+@media (max-width: 400px) {
+    .team-photo {
+        max-width: 100%;
+    }
+    .uam-logo {
+        width: 50%;
+    }
+}

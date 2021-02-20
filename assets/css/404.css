@@ -1,0 +1,43 @@
+.error-404-row {
+    min-height: 70vh;
+}
+
+.error-404-number-heading {
+    display: block;
+    color: var(--brand-light-blue);
+    font-weight: 700;
+    font-size: 25rem;
+    text-align: center;
+}
+
+.error-404-message-box {
+    color: var(--brand-gray);
+    text-align: center;
+}
+
+.error-404-message-heading {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.error-404-message-text {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+    .error-404-number-heading {
+        font-size: 17rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .error-404-number-heading {
+        font-size: 11.5rem;
+    }
+}
