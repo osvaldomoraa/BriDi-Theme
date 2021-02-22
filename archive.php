@@ -26,12 +26,12 @@ get_header();?>
                     </div>                        
                 </div>
             </div>
-            <div class="row archive-entries-row row-cols-1 row-cols-sm-2 row-cols-lg-3 align-items-center">
+            <div class="row archive-entries-row row-cols-1 row-cols-sm-2 row-cols-lg-3">
                 <?php if (have_posts()) { ?>
                         <?php while (have_posts()) { ?>
                             <?php the_post(); ?>
                             <div class='col'>
-                                <div class="card archive-entry-card">
+                                <div class="card archive-entry-card h-100">
                                     <a href="<?php the_permalink(); ?>">
                                         <img src="<?php the_post_thumbnail_url('large'); ?>" class="card-img-top" alt="...">
                                     </a>
