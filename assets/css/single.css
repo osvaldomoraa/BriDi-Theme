@@ -1,0 +1,159 @@
+.single-background-wrapper {
+    background: url("../img/page-background.jpg") #00000066;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    min-height: 400px;
+}
+
+#single-section .container {
+    margin-top: -350px;
+}
+
+.single-heading-box {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
+}
+
+.single-title {
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.single-category a {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+.single-date-box {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+.single-date-box i {
+    margin-right: 8px;
+}
+
+.single-time {
+    margin-left: 20px;
+}
+
+.single-content-box {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 50px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.single-content {
+    min-height: 70vh;
+    overflow: auto;
+}
+
+.single-content p, .single-content img, .single-content iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.single-content p {
+    color: var(--brand-gray);
+    font-size: var(--paragraph-font-d);
+    font-weight: 400;
+    text-align: justify;    
+}
+
+.social-media-buttons {
+    text-align: center;
+}
+
+.social-media-buttons a {
+    display: inline-block;
+}
+
+.social-media-buttons-heading {
+    display: block;
+    text-align: left;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.social-media-share-icon {
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 1.7rem;
+}
+
+.social-media-share-name {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 12px;
+    color: #FFFFFF;
+}
+
+.facebook-share-button .social-media-share-icon {
+    background-color: #3b5998;
+}
+
+.facebook-share-button .social-media-share-name {
+    background-color: #35518a;    
+}
+
+.twitter-share-button .social-media-share-icon {
+    background-color: #1da1f2;
+}
+
+.twitter-share-button .social-media-share-name {
+    background-color: #1a92db;    
+}
+
+.whatsapp-share-button .social-media-share-icon {
+    background-color: #25d366;
+}
+
+.whatsapp-share-button .social-media-share-name {
+    background-color: #21be5c;    
+}
+
+.telegram-share-button .social-media-share-icon {
+    background-color: #2ca5e0;
+}
+
+.telegram-share-button .social-media-share-name {
+    background-color: #2897ce;    
+}
+
+.mail-share-button .social-media-share-icon {
+    background-color: #ea4335;
+}
+
+.mail-share-button .social-media-share-name {
+    background-color: #d53d30;    
+}
+
+
+
+@media (max-width: 991px) {
+    .single-background-wrapper {
+        min-height: 350px;
+    }
+    #single-section .container {
+        margin-top: -300px;
+    }
+    .social-media-buttons a {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #single-section .container {
+        margin-top: -325px;
+    }
+    .single-content-box {
+        margin-top: 25px;
+        padding: 25px;
+    }
+}

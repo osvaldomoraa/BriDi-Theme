@@ -1,5 +1,5 @@
 .page-background-wrapper {
-    background: url("../img/page-background.jpg") #0000004D;
+    background: url("../img/page-background.jpg") #00000066;
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
@@ -24,7 +24,20 @@
     margin-bottom: 100px;
     padding: 50px;
     min-height: 70vh;
+    overflow: auto;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.page-content-box p, .page-content-box img, .page-content-box iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-content-box p {
+    color: var(--brand-gray);
+    font-size: var(--paragraph-font-d);
+    font-weight: 400;
+    text-align: justify;    
 }
 
 @media (max-width: 991px) {

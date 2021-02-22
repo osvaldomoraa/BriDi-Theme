@@ -1,9 +1,9 @@
 <?php
 
-function error_404_styles(){   
+function page_styles(){   
     wp_enqueue_style( 'page' );
 }
-add_action('wp_enqueue_scripts','error_404_styles');
+add_action('wp_enqueue_scripts','page_styles');
 
 get_header();?>
 
@@ -25,7 +25,7 @@ get_header();?>
             </div>
             <div class="row page-content-row align-items-center justify-content-center">
                 <div class="col-12">
-                    <div class="page-content-box standard-text">
+                    <div class="page-content-box">
                         <?php if(have_posts()){
                             while(have_posts()){ the_post();
                                 the_content();
