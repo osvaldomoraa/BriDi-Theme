@@ -1,0 +1,40 @@
+.archive-title-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.entry-card-title {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--brand-blue);
+}
+
+.entry-card-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.entry-card-link {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--brand-green);;
+}
+
+.entry-card-date {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.archive-entry-card {
+    border-style: none;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card-footer {
+    border-style: none;
+}
