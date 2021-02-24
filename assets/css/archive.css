@@ -41,3 +41,7 @@
 .card-footer {
     border-style: none;
 }
+
+hr.entry-card-divider {
+    border-top: 1px solid var(--brand-green);
+}

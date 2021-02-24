@@ -42,8 +42,8 @@ get_header();?>
                                         <p class="card-text entry-card-text"><?php echo get_the_excerpt(); ?></p>
                                         <p class="card-text entry-card-link">Ver más »</p>
                                     </div>
+                                    <hr class='entry-card-divider'>
                                     <div class="card-footer">
-                                        <hr/>
                                         <small class="entry-card-date"><?php the_date(); ?></small>
                                     </div>
                                 </div>

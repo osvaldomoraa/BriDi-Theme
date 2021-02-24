@@ -41,6 +41,11 @@ Defaults
 
 html {
     font-size: 62.5%;
+    color: var(--brand-gray);
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .standard-title {
