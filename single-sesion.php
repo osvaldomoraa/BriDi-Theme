@@ -5,7 +5,58 @@ function sesion_styles(){
 }
 add_action('wp_enqueue_scripts','sesion_styles');
 
-get_header();?>
+get_header();
+
+if ( !is_user_logged_in() ) {
+    echo 'no estas logueado';
+}   
+
+$current_user = get_userdata( get_current_user_id() );
+$current_user_id = $current_user->ID;
+$current_user_role = $current_user->roles[0];
+
+$pretest_gen_status = get_user_meta( $current_user_id, 'pretest_gen' , true );
+
+if ( $current_user_role == 'participant' && $pretest_gen_status !=1 ) {
+    echo 'no hiciste pretest general';
+} 
+
+$pretest_sue_status = get_user_meta( $current_user_id, 'pretest_sue' , true );
+$pretest_hyb_status = get_user_meta( $current_user_id, 'pretest_hyb' , true );
+$pretest_eje_status = get_user_meta( $current_user_id, 'pretest_eje' , true );
+$pretest_hig_status = get_user_meta( $current_user_id, 'pretest_hig' , true );
+
+$current_post_id = get_the_ID();
+
+$current_sesion_categories = get_the_terms( $current_post_id, 'modulo' );
+$current_sesion_category = $current_sesion_categories[0]->slug;
+
+$current_user = get_userdata( $current_user_id );
+
+switch ($current_sesion_category) {
+    case ($current_sesion_category == 'sleeping'):
+        if ($current_user_role == 'participant' && $pretest_sue_status != 1) {
+            echo 'no hiciste pretest sueño';
+            break;
+        }
+    case ($current_sesion_category == 'hybrid'):
+        if ($current_user_role == 'participant' && $pretest_hyb_status != 1) {
+            echo 'no hiciste pretest hybrido';
+            break;
+        }
+    case ($current_sesion_category == 'exercise'):
+        if ($current_user_role == 'participant' && $pretest_eje_status != 1) {
+            echo 'no hiciste pretest ejercicio';
+            break;
+        }
+    case ($current_sesion_category == 'sanitation'):
+        if ($current_user_role == 'participant' && $pretest_hig_status != 1) {
+            echo 'no hiciste pretest higene';
+            break;
+        }    
+}
+
+?>
 
 <main>
     <div class="nav-divider d-flex justify-content-center">

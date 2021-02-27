@@ -54,6 +54,10 @@ require_once __DIR__ . '/vendor/cmb2/init.php';
 
 require_once('features/custom-post-types.php');
 
+require_once('features/custom-capabilities.php');
+
+require_once('features/custom-roles.php');
+
 require_once('features/sesion-fields.php');
 
 require_once('features/measurement-fields.php');
@@ -67,3 +71,5 @@ require_once('features/forms/user-register.php');
 require_once('features/user-fields.php');
 
 require_once('features/forms/pretest-sleeping.php');
+
+require_once('features/forms/pretest-hybrid.php');

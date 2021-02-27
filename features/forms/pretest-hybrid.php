@@ -8,11 +8,20 @@ function pre_hyb_form(){
   do_action( 'pre_hyb_alerts' ); ?>
   <form id="pre-hyb-measurement-form" action="" method="post">
 
-  <label for="pre-hyb-item-1"><?php _e( 'Item 1', 'prehyb' ); ?></label>
+    <label for="pre-hyb-item-1"><?php _e( 'Item 1', 'prehyb' ); ?></label>
     <input name="pre-hyb-item-1" id="pre-hyb-item-1" type="text">
 
-    <label for="pre-hyb-item-2"><?php _e( 'Item 2', 'prehyb' ); ?></label>
-    <input name="pre-hyb-item-2" id="pre-hyb-item-2" type="text">
+    <p>Item 2</p>
+    <input type="radio" id="pre-hyb-item-2-opt-1" name="pre-hyb-item-2" value="1">
+    <label for="pre-hyb-item-2-opt-1">Totalmente de acuerdo</label><br>
+    <input type="radio" id="pre-hyb-item-2-opt-2" name="pre-hyb-item-2" value="2">
+    <label for="pre-hyb-item-2-opt-2">De acuerdo</label><br>
+    <input type="radio" id="pre-hyb-item-2-opt-3" name="pre-hyb-item-2" value="3">
+    <label for="pre-hyb-item-2-opt-3">No de acuerdo ni en desacuerdo</label><br>
+    <input type="radio" id="pre-hyb-item-2-opt-4" name="pre-hyb-item-2" value="4">
+    <label for="pre-hyb-item-2-opt-4">En desacuerdo</label><br>
+    <input type="radio" id="pre-hyb-item-2-opt-5" name="pre-hyb-item-2" value="5">
+    <label for="pre-hyb-item-2-opt-5">Totalmente en desacuerdo</label>
 
     <label for="pre-hyb-item-3"><?php _e( 'Item 3', 'prehyb' ); ?></label>
     <input name="pre-hyb-item-3" id="pre-hyb-item-3" type="text">
@@ -332,7 +341,7 @@ function pre_hyb_private_measurement(){
         add_action( 'pre_hyb_alerts', 'pre_hyb_form_success' );
   }
 
-  update_user_meta( $userId, 'pretest_hyb', 01 );
+  update_user_meta( $userId, 'pretest_hyb', 1 );
 
 }
 add_action( 'init', 'pre_hyb_private_measurement');

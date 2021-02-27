@@ -148,7 +148,7 @@ function custom_registration_function() {
 		);
 }
 
-add_shortcode('new_subject_form', 'custom_registration_shortcode');
+add_shortcode('new_participant_form', 'custom_registration_shortcode');
 
 function custom_registration_shortcode() {
     ob_start();

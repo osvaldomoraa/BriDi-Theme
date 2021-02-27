@@ -8,7 +8,7 @@ function pre_slp_form(){
   do_action( 'pre_slp_alerts' ); ?>
   <form id="pre-slp-measurement-form" action="" method="post">
 
-  <label for="pre-slp-item-1"><?php _e( 'Item 1', 'preslp' ); ?></label>
+    <label for="pre-slp-item-1"><?php _e( 'Item 1', 'preslp' ); ?></label>
     <input name="pre-slp-item-1" id="pre-slp-item-1" type="text">
 
     <label for="pre-slp-item-2"><?php _e( 'Item 2', 'preslp' ); ?></label>
@@ -192,7 +192,7 @@ function pre_slp_private_measurement(){
         add_action( 'pre_slp_alerts', 'pre_slp_form_success' );
   }
 
-  update_user_meta( $userId, 'pretest_sue', 01 );
+  update_user_meta( $userId, 'pretest_sue', 1 );
 
 }
 add_action( 'init', 'pre_slp_private_measurement');

@@ -23,6 +23,16 @@ $args = array(
     'can_export'            => true,
     'publicly_queryable'    => true,
     'rewrite'               => true,
+    'capabilities'          => array(
+        'edit_post'             => 'edit_sesion',
+        'edit_posts'            => 'edit_sesions',
+        'edit_others_posts'     => 'edit_other_sesions',
+        'publish_posts'         => 'publish_sesions',
+        'read_post'             => 'read_sesion',
+        'read_private_posts'    => 'read_private_sesions',
+        'delete_post'           => 'delete_sesion',
+    ),
+    'map_meta_cap'          => true,
 );
 
 register_post_type( 'sesion', $args );
@@ -53,6 +63,16 @@ $args = array(
     'can_export'            => true,
     'publicly_queryable'    => true,
     'rewrite'               => true,
+    'capabilities'          => array(
+        'edit_post'             => 'edit_measurement',
+        'edit_posts'            => 'edit_measurements',
+        'edit_others_posts'     => 'edit_other_measurements',
+        'publish_posts'         => 'publish_measurements',
+        'read_post'             => 'read_measurement',
+        'read_private_posts'    => 'read_private_measurements',
+        'delete_post'           => 'delete_measurement',
+    ),
+    'map_meta_cap'          => true,
 );
 
 register_post_type( 'medicion', $args );
