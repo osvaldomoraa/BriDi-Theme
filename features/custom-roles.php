@@ -2,9 +2,9 @@
 
 function theme_custom_roles() {
 
-    $roles_set = get_option('custom_roles_already_set');
+    $custom_roles_status = get_option('custom_roles_already_set');
 
-    if( !$roles_set ) {
+    if( !$custom_roles_status ) {
 
         add_role( 'coordinator', 'Coordinador', array( 
             'edit_files'                => true,
