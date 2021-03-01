@@ -1,14 +1,8 @@
 <?php
 
-function sesion_styles(){   
-    wp_enqueue_style( 'sesion' );
-}
-add_action('wp_enqueue_scripts','sesion_styles');
-
-get_header();
-
 if ( !is_user_logged_in() ) {
-    echo 'no estas logueado';
+    wp_redirect( get_option( 'bridi_settings' )[ 'bridi_required_login_notice' ] );
+    exit;
 }   
 
 $current_user = get_userdata( get_current_user_id() );
@@ -18,7 +12,8 @@ $current_user_role = $current_user->roles[0];
 $pretest_gen_status = get_user_meta( $current_user_id, 'pretest_gen' , true );
 
 if ( $current_user_role == 'participant' && $pretest_gen_status !=1 ) {
-    echo 'no hiciste pretest general';
+    wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_gen_required_notice' ] );
+    exit;
 } 
 
 $pretest_sue_status = get_user_meta( $current_user_id, 'pretest_sue' , true );
@@ -36,25 +31,33 @@ $current_user = get_userdata( $current_user_id );
 switch ($current_sesion_category) {
     case ($current_sesion_category == 'sleeping'):
         if ($current_user_role == 'participant' && $pretest_sue_status != 1) {
-            echo 'no hiciste pretest sueño';
-            break;
+            wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_sue_required_notice' ] );
+            exit;
         }
     case ($current_sesion_category == 'hybrid'):
         if ($current_user_role == 'participant' && $pretest_hyb_status != 1) {
-            echo 'no hiciste pretest hybrido';
-            break;
+            wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_hyb_required_notice' ] );
+            exit;
         }
     case ($current_sesion_category == 'exercise'):
         if ($current_user_role == 'participant' && $pretest_eje_status != 1) {
-            echo 'no hiciste pretest ejercicio';
-            break;
+            wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_eje_required_notice' ] );
+            exit;
         }
     case ($current_sesion_category == 'sanitation'):
         if ($current_user_role == 'participant' && $pretest_hig_status != 1) {
-            echo 'no hiciste pretest higene';
-            break;
+            wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_hig_required_notice' ] );
+            exit;
         }    
 }
+
+function sesion_styles(){   
+    wp_enqueue_style( 'sesion' );
+}
+add_action('wp_enqueue_scripts','sesion_styles');
+
+get_header();
+
 
 ?>
 

@@ -33,73 +33,61 @@ function bridi_settings_section_callback(  ) {
 
 function bridi_register_form_placement(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_register_form_placement]' value='<?php echo $options["bridi_register_form_placement"]; ?>'> <?php
 }
 
 function bridi_pretest_gen_placement(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_pretest_gen_placement]' value='<?php echo $options["bridi_pretest_gen_placement"]; ?>'> <?php
 }
 
 function bridi_pretest_sue_placement(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_pretest_sue_placement]' value='<?php echo $options["bridi_pretest_sue_placement"]; ?>'> <?php
 }
 
 function bridi_pretest_hyb_placement(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_pretest_hyb_placement]' value='<?php echo $options["bridi_pretest_hyb_placement"]; ?>'> <?php
 }
 
 function bridi_pretest_eje_placement(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_pretest_eje_placement]' value='<?php echo $options["bridi_pretest_eje_placement"]; ?>'> <?php
 }
 
 function bridi_pretest_hig_placement(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_pretest_hig_placement]' value='<?php echo $options["bridi_pretest_hig_placement"]; ?>'> <?php
 }
 
 function bridi_required_login_notice(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_required_login_notice]' value='<?php echo $options["bridi_required_login_notice"]; ?>'> <?php
 }
 
 function bridi_pretest_gen_required_notice(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_pretest_gen_required_notice]' value='<?php echo $options["bridi_pretest_gen_required_notice"]; ?>'> <?php
 }
 
 function bridi_pretest_sue_required_notice(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_pretest_sue_required_notice]' value='<?php echo $options["bridi_pretest_sue_required_notice"]; ?>'> <?php
 }
 
 function bridi_pretest_hyb_required_notice(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_pretest_hyb_required_notice]' value='<?php echo $options["bridi_pretest_hyb_required_notice"]; ?>'> <?php
 }
 
 function bridi_pretest_eje_required_notice(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_pretest_eje_required_notice]' value='<?php echo $options["bridi_pretest_eje_required_notice"]; ?>'> <?php
 }
 
 function bridi_pretest_hig_required_notice(){
     $options = get_option( 'bridi_settings' ); ?>
-
     <input type='url' name='bridi_settings[bridi_pretest_hig_required_notice]' value='<?php echo $options["bridi_pretest_hig_required_notice"]; ?>'> <?php
 }
 
