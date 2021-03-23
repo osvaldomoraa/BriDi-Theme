@@ -139,12 +139,16 @@ get_header();
 
                                         if ( isset( $entry['ses_mb_file_link_assets_block'] ) ) {
                                             $asset_link = esc_url( $entry['ses_mb_file_link_assets_block'] );
-                                        }
+                                            echo '
+                                            <li>
+                                                <a class="sesion-assets-list-element" href="' . $asset_link . '" target="_blank"><i class="bi bi-arrow-down-square-fill sesion-assets-list-icon"></i>' . $asset_name . '</a>
+                                            </li>
+                                            ';
+                                        } else {
+                                            echo 'Aun no hay materiales para esta sesion';
+                                        }                                   
+                                    } 
                                 ?>
-                                <li>
-                                    <a class="sesion-assets-list-element" href="<?php echo $asset_link; ?>" target="_blank"><i class="bi bi-arrow-down-square-fill sesion-assets-list-icon"></i><?php echo $asset_name; ?></a>
-                                </li>
-                                <?php } ?>
                             </ul>
                         </div>
                         <div class="sesion-coments-box">
