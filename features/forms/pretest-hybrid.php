@@ -6,10 +6,336 @@ function pre_hyb_form(){
   ob_start();
 
   do_action( 'pre_hyb_alerts' ); ?>
-  <form id="pre-hyb-measurement-form" action="" method="post">
 
-    <label for="pre-hyb-item-1"><?php _e( 'Item 1', 'prehyb' ); ?></label>
-    <input name="pre-hyb-item-1" id="pre-hyb-item-1" type="text">
+  <div class="shortcode-form-wrapper">
+    <form id="pre-hyb-measurement-form" class="shortcode-form" action="" method="post">
+      <div class="shortcode-form-section">
+        <span class="shortcode-form-title">
+          Seccion I
+        </span>
+        <p class="shortcode-form-instructions">
+          Instrucciones: Las siguientes preguntas se refieren a las actividades físicas que usted hizo en los últimos 30 días Por favor responda cada enunciado con sinceridad aún si usted no se considera una persona activa; piense en cualquier actividad que realiza en el trabajo, el hogar, para trasladarse de un sitio a otro, y también en su tiempo libre de descanso, ejercicio o deporte. Marque con una “X” la opción con la que más se identifique.
+        </p>
+        <div class="scale-heading-row form-row">
+          <div class="col">
+            <span class="shortcode-form-column-title">
+              En promedio, durante los últimos 30 días, ¿Cuántos días, y cuánto tiempo...
+            </span>
+          </div>
+          <div class="col-2">
+            <span class="shortcode-form-column-title">
+              Días por semana
+            </span>
+          </div>
+          <div class="col-2">
+            <span class="shortcode-form-column-title">
+              Horas por día
+            </span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              1. Realizó actividad física intensa donde levantó objetos pesados?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-1"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-2" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-2" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-2" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              2. Subió escaleras largas o pesadas?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-3"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-3" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-4" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-4" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              3. Anduvo en bicicleta haciendo mandados, o para ir de un lugar a otro?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-5"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-5" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-6" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-6" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              4. Participó en deportes o juegos competitivos como: futbol, basquetbol, voleibol?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-7"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-7" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-8" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-8" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              5. Realizó carreras cortas a gran velocidad?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-9"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-9" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-10" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-10" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              6. Realizó actividades físicas moderadas como levantar objetos ligeros?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-11"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-11" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-12" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-12" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              7. Caminó al día por los menos 10 minutos continuos?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-13"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-13" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-14" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-14" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              8. Sacó a pasear a su mascota?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-15"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-15" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-16" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-16" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              9. Salió a bailar (zumba, aerobics, etc.)?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-17"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-17" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-18" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-18" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              10. Realizó labores domésticas como lavar ropa, barrer, lavar el patio?  
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-19"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-19" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-20" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-20" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              11. Salió a trotar o caminar a paso rápido?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-21"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-21" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-22" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-22" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              12. Viajó en un vehículo de motor como un automóvil, o transporte público? 
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-23"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-23" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-24" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-24" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              13. ¿Hizo estiramientos al levantarse de la cama, o al estar trabajando?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-25"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-25" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-26" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-26" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              14. Hizo calentamiento y enfriamiento antes de hacer ejercicio u otra actividad? 
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-27"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-27" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-28" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-28" type="number">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shortcode-form-section">
+        <span class="shortcode-form-title">
+          Seccion II. Actitudes y Creencias hacia el ejercicio
+        </span>
+        <p class="shortcode-form-instructions">
+          Instrucciones: De las siguientes afirmaciones, por favor marque con una “X” un número por cada renglón, dependiendo qué tanto la frase se aplica a lo que Usted en particular cree.
+        </p>
+        <div class="scale-heading-row form-row">
+          <div class="col-4">
+            <span class="shortcode-form-column-title">
+              Creo que para mí, hacer MÁS ejercicio ...
+            </span>
+          </div>
+          <div class="col">
+            <span class="shortcode-form-column-title">
+            Totalmente de acuerdo
+            </span>
+          </div>
+          <div class="col">
+            <span class="shortcode-form-column-title">
+            De acuerdo
+            </span>
+          </div>
+          <div class="col">
+            <span class="shortcode-form-column-title">
+            Ni de acuerdo ni desacuerdo
+            </span>
+          </div>
+          <div class="col">
+            <span class="shortcode-form-column-title">
+            Desacuerdo
+            </span>
+          </div>
+          <div class="col">
+            <span class="shortcode-form-column-title">
+            Totalmente en desacuerdo
+            </span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span class="shortcode-form-label">
+              1. Realizó actividad física intensa donde levantó objetos pesados?
+            </span>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-1"  class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-2" type="number">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <input name="pre-hyb-item-2" class="shortcode-form-input form-control form-control-sm" id="pre-hyb-item-2" type="number">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+
+    
 
     <p>Item 2</p>
     <input type="radio" id="pre-hyb-item-2-opt-1" name="pre-hyb-item-2" value="1">
@@ -111,7 +437,9 @@ function pre_hyb_form(){
 
     <input type="submit" value="<?php _e( 'Guardar', 'prehyb' ); ?>">
 
-  </form>
+    </form>
+  </div>
+  
   <?php
   $output = ob_get_contents();
   ob_end_clean();

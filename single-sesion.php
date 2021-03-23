@@ -63,25 +63,56 @@ get_header();
 
 <main>
     <div class="nav-divider d-flex justify-content-center">
-        <div class="triangle-down "></div>
+        <div class="triangle-down"></div>
     </div>
     <section id="sesion-section">
-        <div class='sesion-background-wrapper'></div>
+        <div class="sesion-background-wrapper"></div>
         <div class="container">
             <div class="row sesion-heading-row align-items-center justify-content-center">
                 <div class="col-12">
                     <div class="sesion-title-box">
-                        <h1 class='standard-title sesion-title'>
+                        <h1 class="standard-title sesion-title">
                             <?php the_title();?>
                         </h1>                        
                     </div>                        
                 </div>
             </div>
             <div class="row sesion-content-row">
-                <div class='col-8'>
-                    <div class='sesion-main-video-box embed-responsive embed-responsive-16by9'>
-                        <iframe class="embed-responsive-item hero-video" src="<?php $ses_mb_main_video = get_post_meta( get_the_ID(), 'ses_mb_main_video', true ); echo esc_url( $ses_mb_main_video ); ?>" allowfullscreen></iframe>
-                    </div>
+                <div class="col-8">
+                <?php
+                $sesion_layout_type = get_post_meta( get_the_ID(), 'ses_mb_sesion_layout_type', true );
+                switch ($sesion_layout_type) {
+                    case ($sesion_layout_type == 'text');
+                        break;
+                    case ($sesion_layout_type == 'video');
+                        $ses_mb_main_video = get_post_meta( get_the_ID(), 'ses_mb_main_video', true );
+                        echo '
+                            <div class="sesion-main-video-box embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item hero-video" src="' . $ses_mb_main_video . '" allowfullscreen></iframe>
+                            </div>
+                        ';
+                    break;
+                    case ($sesion_layout_type == 'slides');
+                        $ses_mb_main_slides = get_post_meta( get_the_ID(), 'ses_mb_main_slides', true );
+                        
+                        echo '
+                            <div class="sesion-main-slides-box embed-responsive embed-responsive-1by1">
+                            ' . do_shortcode( sprintf( '[embeddoc url="%s" viewer="microsoft"]', $ses_mb_main_slides ) ) . '
+                            </div>
+                        ';
+                    break;
+                    case ($sesion_layout_type == 'audio');
+                        $ses_mb_main_audio = get_post_meta( get_the_ID(), 'ses_mb_main_audio', true );
+                        echo '
+                            <div class="sesion-main-audio-box">
+                                <audio class="sesion-main-audio" controls>
+                                    <source src="' . $ses_mb_main_audio . '" type="audio/mpeg3">
+                                    Tu navegador no es compatible con esta pista de audio
+                                </audio>
+                            </div>
+                        ';
+                    break;                    
+                }?>
                     <div class="sesion-content-box">
                         <?php if(have_posts()){
                             while(have_posts()){ the_post();
@@ -90,13 +121,13 @@ get_header();
                         }?>                        
                     </div>
                 </div>
-                <div class='col-4'>
-                    <div class='sesion-sidebar-box'>
-                        <div class='sesion-assets-box'>
-                            <span class='box-title sesion-assets-title'>
+                <div class="col-4">
+                    <div class="sesion-sidebar-box">
+                        <div class="sesion-assets-box">
+                            <span class="box-title sesion-assets-title">
                                 Materiales
                             </span>
-                            <ul class='sesion-assets-list'>
+                            <ul class="sesion-assets-list">
                                 <?php
                                     $entries = get_post_meta( get_the_ID(), 'single_sesion_assets_block', true );
                                     foreach ( (array) $entries as $key => $entry ) {
@@ -111,13 +142,13 @@ get_header();
                                         }
                                 ?>
                                 <li>
-                                    <a class='sesion-assets-list-element' href="<?php echo $asset_link; ?>" target="_blank"><i class="bi bi-arrow-down-square-fill sesion-assets-list-icon"></i><?php echo $asset_name; ?></a>
+                                    <a class="sesion-assets-list-element" href="<?php echo $asset_link; ?>" target="_blank"><i class="bi bi-arrow-down-square-fill sesion-assets-list-icon"></i><?php echo $asset_name; ?></a>
                                 </li>
                                 <?php } ?>
                             </ul>
                         </div>
-                        <div class='sesion-coments-box'>
-                            <span class='box-title sesion-coments-title'>
+                        <div class="sesion-coments-box">
+                            <span class="box-title sesion-coments-title">
                                 Comentarios
                             </span>
                             <?php

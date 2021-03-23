@@ -14,6 +14,18 @@ function sesiones_register_meta_boxes() {
 	) );
 
 	$cmb->add_field( array(
+		'name' => __( 'Tipo de sesion', 'cmb2' ),
+		'id' => $prefix . 'sesion_layout_type',
+		'type' => 'select',
+		'options' => array(
+			'video' => __( 'Principalmente video', 'cmb2' ),
+			'audio' => __( 'Principalmente audio', 'cmb2' ),
+			'slides' => __( 'Principalmente diapositivas', 'cmb2' ),
+			'text' => __( 'Principalmente texto', 'cmb2' ),
+		),
+	) );	
+
+	$cmb->add_field( array(
 		'name' => __( 'URL del video principal', 'cmb2' ),
 		'id' => $prefix . 'main_video',
 		'type' => 'text_url',

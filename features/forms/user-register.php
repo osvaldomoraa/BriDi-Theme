@@ -1,52 +1,37 @@
 <?php 
 
 function registration_form( $username, $password, $email, $first_name, $last_name, $nickname ) {
-    echo '
-    <style>
-	div {
-		margin-bottom:2px;
-	}
-	
-	input{
-		margin-bottom:4px;
-	}
-	</style>
-	';
 
     echo '
-    <form action="' . $_SERVER['REQUEST_URI'] . '" method="post">
-	<div>
-	<label for="username">Nombre de usuario <strong>*</strong></label>
-	<input type="text" name="username" value="' . (isset($_POST['username']) ? $username : null) . '">
-	</div>
-	
-	<div>
-	<label for="password">Contraseña <strong>*</strong></label>
-	<input type="password" name="password" value="' . (isset($_POST['password']) ? $password : null) . '">
-	</div>
-	
-	<div>
-	<label for="email">Correo electronico <strong>*</strong></label>
-	<input type="text" name="email" value="' . (isset($_POST['email']) ? $email : null) . '">
-	</div>
-	
-	<div>
-	<label for="firstname">Nombre</label>
-	<input type="text" name="fname" value="' . (isset($_POST['fname']) ? $first_name : null) . '">
-	</div>
-	
-	<div>
-	<label for="website">Apellidos</label>
-	<input type="text" name="lname" value="' . (isset($_POST['lname']) ? $last_name : null) . '">
-	</div>
-	
-	<div>
-	<label for="nickname">Alias</label>
-	<input type="text" name="nickname" value="' . (isset($_POST['nickname']) ? $nickname : null) . '">
-	</div>
-	
-	<input type="submit" name="submit" value="Registrarme"/>
-	</form>
+    <div class="shortcode-form-wrapper">
+        <form class="shortcode-form" action="' . $_SERVER['REQUEST_URI'] . '" method="post">
+            <div class="form-group">
+                <label for="username" class="shortcode-form-label">Nombre de usuario <span class="shortcode-form-required-field">*</span></label>
+                <input type="text" class="shortcode-form-input form-control" name="username" value="' . (isset($_POST['username']) ? $username : null) . '" required>
+            </div>        
+            <div class="form-group">
+                <label for="password" class="shortcode-form-label">Contraseña <span class="shortcode-form-required-field">*</span></label>
+                <input type="password" class="shortcode-form-input form-control" name="password" value="' . (isset($_POST['password']) ? $password : null) . '" required>
+            </div>        
+            <div class="form-group">
+                <label for="email" class="shortcode-form-label">Correo electronico <span class="shortcode-form-required-field">*</span></label>
+                <input type="text" class="shortcode-form-input form-control" name="email" value="' . (isset($_POST['email']) ? $email : null) . '" required>
+            </div>        
+            <div class="form-group">
+                <label for="firstname" class="shortcode-form-label">Nombre</label>
+                <input type="text" class="shortcode-form-input form-control" name="fname" value="' . (isset($_POST['fname']) ? $first_name : null) . '">
+            </div>        
+            <div class="form-group">
+                <label for="website" class="shortcode-form-label">Apellidos</label>
+                <input type="text" class="shortcode-form-input form-control" name="lname" value="' . (isset($_POST['lname']) ? $last_name : null) . '">
+            </div>        
+            <div class="form-group">
+                <label for="nickname" class="shortcode-form-label">Alias</label>
+                <input type="text" class="shortcode-form-input form-control" name="nickname" value="' . (isset($_POST['nickname']) ? $nickname : null) . '">
+            </div>        
+            <input type="submit" class="shortcode-form-button btn btn-primary btn-lg btn-block" name="submit" value="Registrarme"/>
+        </form>    
+    </div>
 	';
 }
 
@@ -84,10 +69,9 @@ function registration_validation( $username, $password, $email, $first_name, $la
     if ( is_wp_error( $reg_errors ) ) {
 
         foreach ( $reg_errors->get_error_messages() as $error ) {
-            echo '<div>';
-            echo '<strong>ERROR</strong>:';
+            echo '<div class="shortcode-form-errors alert alert-warning" role="alert">';
+            echo '<span><i class="bi bi-exclamation-triangle-fill"></i></span> ';
             echo $error . '<br/>';
-
             echo '</div>';
         }
     }
