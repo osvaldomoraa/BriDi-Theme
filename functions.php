@@ -75,3 +75,5 @@ require_once('features/forms/pretest-sleeping.php');
 require_once('features/forms/pretest-hybrid.php');
 
 require_once('features/default-pages-option.php');
+
+require_once('features/custom-login.php');
