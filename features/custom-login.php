@@ -13,10 +13,10 @@ function custom_login_styles() { ?>
         #login .button-primary {
         background: #57A519;
         border-color: #57A519;
-        }
-        
+        }        
     </style>
 <?php }
+
 add_action( 'login_enqueue_scripts', 'custom_login_styles' );
 
 function custom_login_logo_url() {

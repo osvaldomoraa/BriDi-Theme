@@ -1,55 +1,19 @@
 <?php
 
-if ( !is_user_logged_in() ) {
-    wp_redirect( get_option( 'bridi_settings' )[ 'bridi_required_login_notice' ] );
-    exit;
-}   
+user_logged_verification();
 
-$current_user = get_userdata( get_current_user_id() );
+current_user_object_query();
+
 $current_user_id = $current_user->ID;
 $current_user_role = $current_user->roles[0];
 
-$pretest_gen_status = get_user_meta( $current_user_id, 'pretest_gen' , true );
-
-if ( $current_user_role == 'participant' && $pretest_gen_status !=1 ) {
-    wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_gen_required_notice' ] );
-    exit;
-} 
-
-$pretest_sue_status = get_user_meta( $current_user_id, 'pretest_sue' , true );
-$pretest_hyb_status = get_user_meta( $current_user_id, 'pretest_hyb' , true );
-$pretest_eje_status = get_user_meta( $current_user_id, 'pretest_eje' , true );
-$pretest_hig_status = get_user_meta( $current_user_id, 'pretest_hig' , true );
+required_pretest_gen_verification($current_user_id, $current_user_role);
 
 $current_post_id = get_the_ID();
-
-$current_sesion_categories = get_the_terms( $current_post_id, 'modulo' );
+$current_sesion_categories = get_the_terms( $post_id, 'modulo' );
 $current_sesion_category = $current_sesion_categories[0]->slug;
 
-$current_user = get_userdata( $current_user_id );
-
-switch ($current_sesion_category) {
-    case ($current_sesion_category == 'sleeping'):
-        if ($current_user_role == 'participant' && $pretest_sue_status != 1) {
-            wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_sue_required_notice' ] );
-            exit;
-        }
-    case ($current_sesion_category == 'hybrid'):
-        if ($current_user_role == 'participant' && $pretest_hyb_status != 1) {
-            wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_hyb_required_notice' ] );
-            exit;
-        }
-    case ($current_sesion_category == 'exercise'):
-        if ($current_user_role == 'participant' && $pretest_eje_status != 1) {
-            wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_eje_required_notice' ] );
-            exit;
-        }
-    case ($current_sesion_category == 'sanitation'):
-        if ($current_user_role == 'participant' && $pretest_hig_status != 1) {
-            wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_hig_required_notice' ] );
-            exit;
-        }    
-}
+required_pretest_module_verification($current_sesion_category, $current_user_role, $current_user_id);
 
 function sesion_styles(){   
     wp_enqueue_style( 'sesion' );

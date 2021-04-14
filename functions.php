@@ -77,3 +77,5 @@ require_once('features/forms/pretest-hybrid.php');
 require_once('features/default-pages-option.php');
 
 require_once('features/custom-login.php');
+
+require_once('features/acces-validations.php');
