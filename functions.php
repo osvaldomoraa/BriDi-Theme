@@ -79,3 +79,5 @@ require_once('features/default-pages-option.php');
 require_once('features/custom-login.php');
 
 require_once('features/acces-validations.php');
+
+require_once('features/init-terms.php');
