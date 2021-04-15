@@ -26,9 +26,9 @@ function required_pretest_gen_verification($user_id, $user_role) {
 function required_pretest_module_verification($category, $role, $user_id) {
     switch ($category) {
         case ('sleeping'):
-            $pretest_sue_status = get_user_meta( $user_id, 'pretest_sue' , true );
-            if ($role === 'participant' && $pretest_sue_status != 1) {
-                wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_sue_required_notice' ] );
+            $pretest_slp_status = get_user_meta( $user_id, 'pretest_slp' , true );
+            if ($role === 'participant' && $pretest_slp_status != 1) {
+                wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_slp_required_notice' ] );
                 exit;
             }   else {
                     break;
@@ -42,17 +42,17 @@ function required_pretest_module_verification($category, $role, $user_id) {
                     break;
             }
         case ('exercise'):
-            $pretest_eje_status = get_user_meta( $user_id, 'pretest_eje' , true );
-            if ($role === 'participant' && $pretest_eje_status != 1) {
-                wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_eje_required_notice' ] );
+            $pretest_exc_status = get_user_meta( $user_id, 'pretest_exc' , true );
+            if ($role === 'participant' && $pretest_exc_status != 1) {
+                wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_exc_required_notice' ] );
                 exit;
             }   else {
                     break;
             }
         case ('sanitation'):
-            $pretest_hig_status = get_user_meta( $user_id, 'pretest_hig' , true );
-            if ($role === 'participant' && $pretest_hig_status != 1) {
-                wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_hig_required_notice' ] );
+            $pretest_snt_status = get_user_meta( $user_id, 'pretest_snt' , true );
+            if ($role === 'participant' && $pretest_snt_status != 1) {
+                wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_snt_required_notice' ] );
                 exit;
             }   else {
                     break;

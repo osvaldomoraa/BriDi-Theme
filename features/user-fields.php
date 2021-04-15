@@ -13,16 +13,16 @@ function measurements_profile_fields( $user ) { ?>
         </tr>
 
         <tr>
-            <th><label for="pretest_sue">Pretest sueño</label></th>
+            <th><label for="pretest_slp">Pretest sueño</label></th>
             <td>
-            <input type="number" name="pretest_sue" id="pretest_sue" value="<?php echo esc_attr( get_the_author_meta( 'pretest_sue', $user->ID ) ); ?>" class="regular-text" /><br />
+            <input type="number" name="pretest_slp" id="pretest_slp" value="<?php echo esc_attr( get_the_author_meta( 'pretest_slp', $user->ID ) ); ?>" class="regular-text" /><br />
             <span class="description">El participante hizo el pretest de sueño</span>
             </td>
         </tr>
         <tr>
-            <th><label for="postest_sue">Postest sueño</label></th>
+            <th><label for="postest_slp">Postest sueño</label></th>
             <td>
-            <input type="number" name="postest_sue" id="postest_sue" value="<?php echo esc_attr( get_the_author_meta( 'postest_sue', $user->ID ) ); ?>" class="regular-text" /><br />
+            <input type="number" name="postest_slp" id="postest_slp" value="<?php echo esc_attr( get_the_author_meta( 'postest_slp', $user->ID ) ); ?>" class="regular-text" /><br />
             <span class="description">El participante hizo el postest de sueño</span>
             </td>
         </tr>
@@ -43,31 +43,31 @@ function measurements_profile_fields( $user ) { ?>
         </tr>
 
         <tr>
-            <th><label for="pretest_eje">Pretest ejercicio</label></th>
+            <th><label for="pretest_exc">Pretest ejercicio</label></th>
             <td>
-            <input type="number" name="pretest_eje" id="pretest_eje" value="<?php echo esc_attr( get_the_author_meta( 'pretest_eje', $user->ID ) ); ?>" class="regular-text" /><br />
+            <input type="number" name="pretest_exc" id="pretest_exc" value="<?php echo esc_attr( get_the_author_meta( 'pretest_exc', $user->ID ) ); ?>" class="regular-text" /><br />
             <span class="description">El participante hizo el pretest de ejercicio</span>
             </td>
         </tr>
         <tr>
-            <th><label for="postest_eje">Postest ejercicio</label></th>
+            <th><label for="postest_exc">Postest ejercicio</label></th>
             <td>
-            <input type="number" name="postest_eje" id="postest_eje" value="<?php echo esc_attr( get_the_author_meta( 'postest_eje', $user->ID ) ); ?>" class="regular-text" /><br />
+            <input type="number" name="postest_exc" id="postest_exc" value="<?php echo esc_attr( get_the_author_meta( 'postest_exc', $user->ID ) ); ?>" class="regular-text" /><br />
             <span class="description">El participante hizo el postest de ejercicio</span>
             </td>
         </tr>
 
         <tr>
-            <th><label for="pretest_hig">Pretest higene</label></th>
+            <th><label for="pretest_snt">Pretest higene</label></th>
             <td>
-            <input type="number" name="pretest_hig" id="pretest_hig" value="<?php echo esc_attr( get_the_author_meta( 'pretest_hig', $user->ID ) ); ?>" class="regular-text" /><br />
+            <input type="number" name="pretest_snt" id="pretest_snt" value="<?php echo esc_attr( get_the_author_meta( 'pretest_snt', $user->ID ) ); ?>" class="regular-text" /><br />
             <span class="description">El participante hizo el pretest de higene</span>
             </td>
         </tr>
         <tr>
-            <th><label for="postest_hig">Postest higene</label></th>
+            <th><label for="postest_snt">Postest higene</label></th>
             <td>
-            <input type="number" name="postest_hig" id="postest_hig" value="<?php echo esc_attr( get_the_author_meta( 'postest_hig', $user->ID ) ); ?>" class="regular-text" /><br />
+            <input type="number" name="postest_snt" id="postest_snt" value="<?php echo esc_attr( get_the_author_meta( 'postest_snt', $user->ID ) ); ?>" class="regular-text" /><br />
             <span class="description">El participante hizo el postest de higene</span>
             </td>
         </tr>
@@ -95,17 +95,17 @@ function save_measurements_profile_fields( $user_id ) {
     update_user_meta( $user_id, 'pretest_gen', $_POST['pretest_gen'] );
     update_user_meta( $user_id, 'postest_gen', $_POST['postest_gen'] );
 
-    update_user_meta( $user_id, 'pretest_sue', $_POST['pretest_sue'] );
-    update_user_meta( $user_id, 'postest_sue', $_POST['postest_sue'] );
+    update_user_meta( $user_id, 'pretest_slp', $_POST['pretest_slp'] );
+    update_user_meta( $user_id, 'postest_slp', $_POST['postest_slp'] );
 
     update_user_meta( $user_id, 'pretest_hyb', $_POST['pretest_hyb'] );
     update_user_meta( $user_id, 'postest_hyb', $_POST['postest_hyb'] );
 
-    update_user_meta( $user_id, 'pretest_eje', $_POST['pretest_eje'] );
-    update_user_meta( $user_id, 'postest_eje', $_POST['postest_eje'] );
+    update_user_meta( $user_id, 'pretest_exc', $_POST['pretest_exc'] );
+    update_user_meta( $user_id, 'postest_exc', $_POST['postest_exc'] );
 
-    update_user_meta( $user_id, 'pretest_hig', $_POST['pretest_hig'] );
-    update_user_meta( $user_id, 'postest_hig', $_POST['postest_hig'] );
+    update_user_meta( $user_id, 'pretest_snt', $_POST['pretest_snt'] );
+    update_user_meta( $user_id, 'postest_snt', $_POST['postest_snt'] );
 }
 
 add_action( 'personal_options_update', 'save_measurements_profile_fields' );

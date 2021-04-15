@@ -192,7 +192,7 @@ function pre_slp_private_measurement(){
         add_action( 'pre_slp_alerts', 'pre_slp_form_success' );
   }
 
-  update_user_meta( $userId, 'pretest_sue', 1 );
+  update_user_meta( $userId, 'pretest_slp', 1 );
 
 }
 add_action( 'init', 'pre_slp_private_measurement');
