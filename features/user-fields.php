@@ -28,17 +28,32 @@ function measurements_profile_fields( $user ) { ?>
         </tr>
 
         <tr>
-            <th><label for="pretest_sts">Pretest estres y emociones</label></th>
+            <th><label for="pretest_sts">Pretest estres</label></th>
             <td>
             <input type="number" name="pretest_sts" id="pretest_sts" value="<?php echo esc_attr( get_the_author_meta( 'pretest_sts', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description">El participante hizo el pretest de estres y emociones</span>
+            <span class="description">El participante hizo el pretest de Estres</span>
             </td>
         </tr>
         <tr>
-            <th><label for="postest_sts">Postest estres y emociones</label></th>
+            <th><label for="postest_sts">Postest estres</label></th>
             <td>
             <input type="number" name="postest_sts" id="postest_sts" value="<?php echo esc_attr( get_the_author_meta( 'postest_sts', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description">El participante hizo el postest de estres y emociones</span>
+            <span class="description">El participante hizo el postest de Estres</span>
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="pretest_sts">Pretest emociones</label></th>
+            <td>
+            <input type="number" name="pretest_emt" id="pretest_emt" value="<?php echo esc_attr( get_the_author_meta( 'pretest_emt', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description">El participante hizo el pretest de Estres</span>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="postest_sts">Postest emociones</label></th>
+            <td>
+            <input type="number" name="postest_emt" id="postest_emt" value="<?php echo esc_attr( get_the_author_meta( 'postest_emt', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description">El participante hizo el postest de Estres</span>
             </td>
         </tr>
 
@@ -100,6 +115,9 @@ function save_measurements_profile_fields( $user_id ) {
 
     update_user_meta( $user_id, 'pretest_sts', $_POST['pretest_sts'] );
     update_user_meta( $user_id, 'postest_sts', $_POST['postest_sts'] );
+
+    update_user_meta( $user_id, 'pretest_emt', $_POST['pretest_emt'] );
+    update_user_meta( $user_id, 'postest_emt', $_POST['postest_emt'] );
 
     update_user_meta( $user_id, 'pretest_exc', $_POST['pretest_exc'] );
     update_user_meta( $user_id, 'postest_exc', $_POST['postest_exc'] );

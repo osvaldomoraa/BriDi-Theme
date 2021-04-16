@@ -10,10 +10,14 @@ function sesion_custom_terms() {
               'description'=> 'Sesiones del modulo 	Ejercicio',
               'slug' => 'exercise'
             ),
-            'Estres y emociones' => array(
-                'description'=> 'Sesiones del modulo Estres y emociones',
+            'Estres' => array(
+                'description'=> 'Sesiones del modulo Estres',
                 'slug' => 'stress'
             ),
+            'Emociones' => array(
+              'description'=> 'Sesiones del modulo Emociones',
+              'slug' => 'emotiones'
+          ),
             'Higene' => array(
             'description'=> 'Sesiones del modulo Higene',
             'slug' => 'sanitation'

@@ -41,6 +41,14 @@ function required_pretest_module_verification($category, $role, $user_id) {
             }   else {
                     break;
             }
+        case ('emotions'):
+            $pretest_emt_status = get_user_meta( $user_id, 'pretest_emt' , true );
+            if ($role === 'participant' && $pretest_sts_status != 1) {
+                wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_emt_required_notice' ] );
+                exit;
+            }   else {
+                    break;
+            }
         case ('exercise'):
             $pretest_exc_status = get_user_meta( $user_id, 'pretest_exc' , true );
             if ($role === 'participant' && $pretest_exc_status != 1) {
