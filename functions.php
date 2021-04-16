@@ -72,7 +72,7 @@ require_once('features/user-fields.php');
 
 require_once('features/forms/pretest-sleeping.php');
 
-require_once('features/forms/pretest-hybrid.php');
+require_once('features/forms/pretest-stress.php');
 
 require_once('features/default-pages-option.php');
 

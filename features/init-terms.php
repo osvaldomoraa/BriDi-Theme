@@ -12,7 +12,7 @@ function sesion_custom_terms() {
             ),
             'Estres y emociones' => array(
                 'description'=> 'Sesiones del modulo Estres y emociones',
-                'slug' => 'hybrid'
+                'slug' => 'stress'
             ),
             'Higene' => array(
             'description'=> 'Sesiones del modulo Higene',

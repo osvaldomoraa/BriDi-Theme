@@ -14,13 +14,13 @@ function bridi_settings_init() {
     add_settings_field( 'bridi_register_form_placement', __( 'Formulario de registro:', 'bridi-theme' ), 'bridi_register_form_placement', 'bridi-setting', 'bridi-theme-section' );
     add_settings_field( 'bridi_pretest_gen_placement', __( 'Pretest General:', 'bridi-theme' ), 'bridi_pretest_gen_placement', 'bridi-setting', 'bridi-theme-section' );
     add_settings_field( 'bridi_pretest_slp_placement', __( 'Pretest Sueño:', 'bridi-theme' ), 'bridi_pretest_slp_placement', 'bridi-setting', 'bridi-theme-section' );
-    add_settings_field( 'bridi_pretest_hyb_placement', __( 'Pretest Hibrido:', 'bridi-theme' ), 'bridi_pretest_hyb_placement', 'bridi-setting', 'bridi-theme-section' );
+    add_settings_field( 'bridi_pretest_sts_placement', __( 'Pretest Hibrido:', 'bridi-theme' ), 'bridi_pretest_sts_placement', 'bridi-setting', 'bridi-theme-section' );
     add_settings_field( 'bridi_pretest_exc_placement', __( 'Pretest Ejercicio:', 'bridi-theme' ), 'bridi_pretest_exc_placement', 'bridi-setting', 'bridi-theme-section' );
     add_settings_field( 'bridi_pretest_snt_placement', __( 'Pretest Higene:', 'bridi-theme' ), 'bridi_pretest_snt_placement', 'bridi-setting', 'bridi-theme-section' );
     add_settings_field( 'bridi_required_login_notice', __( 'Aviso de inicio de sesion requerido:', 'bridi-theme' ), 'bridi_required_login_notice', 'bridi-setting', 'bridi-theme-section' );
     add_settings_field( 'bridi_pretest_gen_required_notice', __( 'Aviso de Pretest General requerido:', 'bridi-theme' ), 'bridi_pretest_gen_required_notice', 'bridi-setting', 'bridi-theme-section' );
     add_settings_field( 'bridi_pretest_slp_required_notice', __( 'Aviso de Pretest Sueño requerido:', 'bridi-theme' ), 'bridi_pretest_slp_required_notice', 'bridi-setting', 'bridi-theme-section' );
-    add_settings_field( 'bridi_pretest_hyb_required_notice', __( 'Aviso de Pretest Hibrido requerido:', 'bridi-theme' ), 'bridi_pretest_hyb_required_notice', 'bridi-setting', 'bridi-theme-section' );
+    add_settings_field( 'bridi_pretest_sts_required_notice', __( 'Aviso de Pretest Hibrido requerido:', 'bridi-theme' ), 'bridi_pretest_sts_required_notice', 'bridi-setting', 'bridi-theme-section' );
     add_settings_field( 'bridi_pretest_exc_required_notice', __( 'Aviso de Pretest Ejercicio requerido:', 'bridi-theme' ), 'bridi_pretest_exc_required_notice', 'bridi-setting', 'bridi-theme-section' );
     add_settings_field( 'bridi_pretest_snt_required_notice', __( 'Aviso de Pretest Higene requerido:', 'bridi-theme' ), 'bridi_pretest_snt_required_notice', 'bridi-setting', 'bridi-theme-section' );
     
@@ -52,10 +52,10 @@ function bridi_pretest_slp_placement(){
     <?php
 }
 
-function bridi_pretest_hyb_placement(){
+function bridi_pretest_sts_placement(){
     $options = get_option( 'bridi_settings' ); ?>
-    <input type='url' name='bridi_settings[bridi_pretest_hyb_placement]' value='<?php echo $options["bridi_pretest_hyb_placement"]; ?>'>
-    <p class="text-center">Shortcode: [pre_hyb_shortcode]</p>
+    <input type='url' name='bridi_settings[bridi_pretest_sts_placement]' value='<?php echo $options["bridi_pretest_sts_placement"]; ?>'>
+    <p class="text-center">Shortcode: [pre_sts_shortcode]</p>
     <?php
 }
 
@@ -91,9 +91,9 @@ function bridi_pretest_slp_required_notice(){
     <?php
 }
 
-function bridi_pretest_hyb_required_notice(){
+function bridi_pretest_sts_required_notice(){
     $options = get_option( 'bridi_settings' ); ?>
-    <input type='url' name='bridi_settings[bridi_pretest_hyb_required_notice]' value='<?php echo $options["bridi_pretest_hyb_required_notice"]; ?>'>
+    <input type='url' name='bridi_settings[bridi_pretest_sts_required_notice]' value='<?php echo $options["bridi_pretest_sts_required_notice"]; ?>'>
     <?php
 }
 

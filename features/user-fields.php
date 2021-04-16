@@ -28,16 +28,16 @@ function measurements_profile_fields( $user ) { ?>
         </tr>
 
         <tr>
-            <th><label for="pretest_hyb">Pretest estres y emociones</label></th>
+            <th><label for="pretest_sts">Pretest estres y emociones</label></th>
             <td>
-            <input type="number" name="pretest_hyb" id="pretest_hyb" value="<?php echo esc_attr( get_the_author_meta( 'pretest_hyb', $user->ID ) ); ?>" class="regular-text" /><br />
+            <input type="number" name="pretest_sts" id="pretest_sts" value="<?php echo esc_attr( get_the_author_meta( 'pretest_sts', $user->ID ) ); ?>" class="regular-text" /><br />
             <span class="description">El participante hizo el pretest de estres y emociones</span>
             </td>
         </tr>
         <tr>
-            <th><label for="postest_hyb">Postest estres y emociones</label></th>
+            <th><label for="postest_sts">Postest estres y emociones</label></th>
             <td>
-            <input type="number" name="postest_hyb" id="postest_hyb" value="<?php echo esc_attr( get_the_author_meta( 'postest_hyb', $user->ID ) ); ?>" class="regular-text" /><br />
+            <input type="number" name="postest_sts" id="postest_sts" value="<?php echo esc_attr( get_the_author_meta( 'postest_sts', $user->ID ) ); ?>" class="regular-text" /><br />
             <span class="description">El participante hizo el postest de estres y emociones</span>
             </td>
         </tr>
@@ -98,8 +98,8 @@ function save_measurements_profile_fields( $user_id ) {
     update_user_meta( $user_id, 'pretest_slp', $_POST['pretest_slp'] );
     update_user_meta( $user_id, 'postest_slp', $_POST['postest_slp'] );
 
-    update_user_meta( $user_id, 'pretest_hyb', $_POST['pretest_hyb'] );
-    update_user_meta( $user_id, 'postest_hyb', $_POST['postest_hyb'] );
+    update_user_meta( $user_id, 'pretest_sts', $_POST['pretest_sts'] );
+    update_user_meta( $user_id, 'postest_sts', $_POST['postest_sts'] );
 
     update_user_meta( $user_id, 'pretest_exc', $_POST['pretest_exc'] );
     update_user_meta( $user_id, 'postest_exc', $_POST['postest_exc'] );

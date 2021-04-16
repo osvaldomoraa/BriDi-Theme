@@ -919,7 +919,7 @@ function pre_emt_private_measurement(){
       global $current_user;
       $userId = $current_user->ID;
 
-      $postTitle = "Pretest sueño de #" . $userId;
+      $postTitle = "Pretest emociones de #" . $userId;
 
       $metaItem1 = $_POST['pre-emt-item-1'];
       $metaItem2 = $_POST['pre-emt-item-2'];

@@ -33,10 +33,10 @@ function required_pretest_module_verification($category, $role, $user_id) {
             }   else {
                     break;
             }
-        case ('hybrid'):
-            $pretest_hyb_status = get_user_meta( $user_id, 'pretest_hyb' , true );
-            if ($role === 'participant' && $pretest_hyb_status != 1) {
-                wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_hyb_required_notice' ] );
+        case ('stress'):
+            $pretest_sts_status = get_user_meta( $user_id, 'pretest_sts' , true );
+            if ($role === 'participant' && $pretest_sts_status != 1) {
+                wp_redirect( get_option( 'bridi_settings' )[ 'bridi_pretest_sts_required_notice' ] );
                 exit;
             }   else {
                     break;
