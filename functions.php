@@ -52,34 +52,25 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 
 require_once __DIR__ . '/vendor/cmb2/init.php';
 
-require_once('features/custom-post-types.php');
+require_once __DIR__ . '/features/custom-post-types.php';
+require_once __DIR__ . '/features/sesion-fields.php';
+require_once __DIR__ . '/features/measurement-fields.php';
+require_once __DIR__ . '/features/home-template-fields.php';
 
-require_once('features/custom-capabilities.php');
+require_once __DIR__ . '/features/custom-roles.php';
+require_once __DIR__ . '/features/custom-capabilities.php';
 
-require_once('features/custom-roles.php');
+require_once __DIR__ . '/features/forms/pretest-general.php';
+require_once __DIR__ . '/features/forms/pretest-stress.php';
+require_once __DIR__ . '/features/forms/pretest-emotions.php';
 
-require_once('features/sesion-fields.php');
+require_once __DIR__ . '/features/default-pages-option.php';
+require_once __DIR__ . '/features/custom-login.php';
 
-require_once('features/measurement-fields.php');
+require_once __DIR__ . '/features/custom-taxonomy.php';
+require_once __DIR__ . '/features/init-terms.php';
 
-require_once('features/home-template-fields.php');
+require_once __DIR__ . '/features/acces-validations.php';
+require_once __DIR__ . '/features/forms/user-register.php';
+require_once __DIR__ . '/features/user-fields.php';
 
-require_once('features/custom-taxonomy.php');
-
-require_once('features/forms/user-register.php');
-
-require_once('features/user-fields.php');
-
-require_once('features/forms/pretest-sleeping.php');
-
-require_once('features/forms/pretest-stress.php');
-
-require_once('features/forms/pretest-emotions.php');
-
-require_once('features/default-pages-option.php');
-
-require_once('features/custom-login.php');
-
-require_once('features/acces-validations.php');
-
-require_once('features/init-terms.php');
