@@ -370,7 +370,7 @@ get_header();?>
                         <p class="standard-text">
                             <?php
                                 $htmb_cmb2_text_team = get_post_meta( get_the_ID(), 'htmb_cmb2_text_team', true );
-                                echo esc_html( $htmb_cmb2_team );
+                                echo esc_html( $htmb_cmb2_text_team );
                             ?>   
                         </p>
                     </div>
