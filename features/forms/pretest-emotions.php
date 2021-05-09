@@ -900,6 +900,676 @@ function pre_emt_form(){
           </div>        
         </div>
       </div>
+      <div class="shortcode-form-section">
+        <span class="shortcode-form-title">
+          Estrés General
+        </span>
+        <p class="shortcode-form-instructions">
+          En esta sección queremos explorar la impresión que tienes de la situación actual de tu vida. Te pedimos que tus respuestas se refieran al último mes. No hay respuestas correctas o incorrectas, sólo dinos tu opinión personal. Por favor, responde a todas las preguntas sinceramente.
+        </p>
+        <p class="shortcode-form-scale-instructions">
+          Indica cómo te has sentido en el último mes, ¿Con qué frecuencia...
+        </p>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">He estado afectado por algo que ha ocurrido inesperadamente?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-41-opt-1" name="pre-emt-item-41" value="1" required>
+              <label for="pre-emt-item-41-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-41-opt-2" name="pre-emt-item-41" value="2">
+              <label for="pre-emt-item-41-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-41-opt-3" name="pre-emt-item-41" value="3">
+              <label for="pre-emt-item-41-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-41-opt-4" name="pre-emt-item-41" value="4">
+              <label for="pre-emt-item-41-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-41-opt-5" name="pre-emt-item-41" value="5">
+              <label for="pre-emt-item-41-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Me he sentido incapaz de controlar las cosas importantes en mi vida?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-42-opt-1" name="pre-emt-item-42" value="1" required>
+              <label for="pre-emt-item-42-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-42-opt-2" name="pre-emt-item-42" value="2">
+              <label for="pre-emt-item-42-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-42-opt-3" name="pre-emt-item-42" value="3">
+              <label for="pre-emt-item-42-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-42-opt-4" name="pre-emt-item-42" value="4">
+              <label for="pre-emt-item-42-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-42-opt-5" name="pre-emt-item-42" value="5">
+              <label for="pre-emt-item-42-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Me he sentido nervioso/a?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-43-opt-1" name="pre-emt-item-43" value="1" required>
+              <label for="pre-emt-item-43-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-43-opt-2" name="pre-emt-item-43" value="2">
+              <label for="pre-emt-item-43-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-43-opt-3" name="pre-emt-item-43" value="3">
+              <label for="pre-emt-item-43-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-43-opt-4" name="pre-emt-item-43" value="4">
+              <label for="pre-emt-item-43-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-43-opt-5" name="pre-emt-item-43" value="5">
+              <label for="pre-emt-item-43-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">He manejado con éxito los pequeños problemas irritantes de mi vida?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-44-opt-1" name="pre-emt-item-44" value="1" required>
+              <label for="pre-emt-item-44-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-44-opt-2" name="pre-emt-item-44" value="2">
+              <label for="pre-emt-item-44-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-44-opt-3" name="pre-emt-item-44" value="3">
+              <label for="pre-emt-item-44-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-44-opt-4" name="pre-emt-item-44" value="4">
+              <label for="pre-emt-item-44-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-44-opt-5" name="pre-emt-item-44" value="5">
+              <label for="pre-emt-item-44-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">He sentido que he afrontado efectivamente los cambios importantes que han estado ocurriendo en mi vida?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-45-opt-1" name="pre-emt-item-45" value="1" required>
+              <label for="pre-emt-item-45-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-45-opt-2" name="pre-emt-item-45" value="2">
+              <label for="pre-emt-item-45-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-45-opt-3" name="pre-emt-item-45" value="3">
+              <label for="pre-emt-item-45-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-45-opt-4" name="pre-emt-item-45" value="4">
+              <label for="pre-emt-item-45-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-45-opt-5" name="pre-emt-item-45" value="5">
+              <label for="pre-emt-item-45-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">He sentido confianza en poder manejar mis problemas personales?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-46-opt-1" name="pre-emt-item-46" value="1" required>
+              <label for="pre-emt-item-46-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-46-opt-2" name="pre-emt-item-46" value="2">
+              <label for="pre-emt-item-46-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-46-opt-3" name="pre-emt-item-46" value="3">
+              <label for="pre-emt-item-46-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-46-opt-4" name="pre-emt-item-46" value="4">
+              <label for="pre-emt-item-46-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-46-opt-5" name="pre-emt-item-46" value="5">
+              <label for="pre-emt-item-46-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">He sentido que las cosas van de la manera que quiero?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-47-opt-1" name="pre-emt-item-47" value="1" required>
+              <label for="pre-emt-item-47-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-47-opt-2" name="pre-emt-item-47" value="2">
+              <label for="pre-emt-item-47-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-47-opt-3" name="pre-emt-item-47" value="3">
+              <label for="pre-emt-item-47-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-47-opt-4" name="pre-emt-item-47" value="4">
+              <label for="pre-emt-item-47-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-47-opt-5" name="pre-emt-item-47" value="5">
+              <label for="pre-emt-item-47-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">He sido capaz de controlar las dificultades de mi vida?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-48-opt-1" name="pre-emt-item-48" value="1" required>
+              <label for="pre-emt-item-48-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-48-opt-2" name="pre-emt-item-48" value="2">
+              <label for="pre-emt-item-48-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-48-opt-3" name="pre-emt-item-48" value="3">
+              <label for="pre-emt-item-48-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-48-opt-4" name="pre-emt-item-48" value="4">
+              <label for="pre-emt-item-48-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-48-opt-5" name="pre-emt-item-48" value="5">
+              <label for="pre-emt-item-48-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">He sentido que tengo todo bajo control?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-49-opt-1" name="pre-emt-item-49" value="1" required>
+              <label for="pre-emt-item-49-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-49-opt-2" name="pre-emt-item-49" value="2">
+              <label for="pre-emt-item-49-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-49-opt-3" name="pre-emt-item-49" value="3">
+              <label for="pre-emt-item-49-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-49-opt-4" name="pre-emt-item-49" value="4">
+              <label for="pre-emt-item-49-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-49-opt-5" name="pre-emt-item-49" value="5">
+              <label for="pre-emt-item-49-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Me he irritado por cosas que ocurrieron y que salieron de mi control?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-50-opt-1" name="pre-emt-item-50" value="1" required>
+              <label for="pre-emt-item-50-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-50-opt-2" name="pre-emt-item-50" value="2">
+              <label for="pre-emt-item-50-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-50-opt-3" name="pre-emt-item-50" value="3">
+              <label for="pre-emt-item-50-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-50-opt-4" name="pre-emt-item-50" value="4">
+              <label for="pre-emt-item-50-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-50-opt-5" name="pre-emt-item-50" value="5">
+              <label for="pre-emt-item-50-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">He repensado varias veces sobre las tareas que debo hacer?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-51-opt-1" name="pre-emt-item-51" value="1" required>
+              <label for="pre-emt-item-51-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-51-opt-2" name="pre-emt-item-51" value="2">
+              <label for="pre-emt-item-51-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-51-opt-3" name="pre-emt-item-51" value="3">
+              <label for="pre-emt-item-51-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-51-opt-4" name="pre-emt-item-51" value="4">
+              <label for="pre-emt-item-51-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-51-opt-5" name="pre-emt-item-51" value="5">
+              <label for="pre-emt-item-51-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">He podido controlar la manera en la que ocupo mi tiempo?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-52-opt-1" name="pre-emt-item-52" value="1" required>
+              <label for="pre-emt-item-52-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-52-opt-2" name="pre-emt-item-52" value="2">
+              <label for="pre-emt-item-52-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-52-opt-3" name="pre-emt-item-52" value="3">
+              <label for="pre-emt-item-52-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-52-opt-4" name="pre-emt-item-52" value="4">
+              <label for="pre-emt-item-52-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-52-opt-5" name="pre-emt-item-52" value="5">
+              <label for="pre-emt-item-52-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Parece que los problemas se acumulan tanto que no puedo superarlos?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-53-opt-1" name="pre-emt-item-53" value="1" required>
+              <label for="pre-emt-item-53-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-53-opt-2" name="pre-emt-item-53" value="2">
+              <label for="pre-emt-item-53-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-53-opt-3" name="pre-emt-item-53" value="3">
+              <label for="pre-emt-item-53-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-53-opt-4" name="pre-emt-item-53" value="4">
+              <label for="pre-emt-item-53-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-53-opt-5" name="pre-emt-item-53" value="5">
+              <label for="pre-emt-item-53-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">He tenido la sensación de que nadie me ayuda con los problemas?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-54-opt-1" name="pre-emt-item-54" value="1" required>
+              <label for="pre-emt-item-54-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-54-opt-2" name="pre-emt-item-54" value="2">
+              <label for="pre-emt-item-54-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-54-opt-3" name="pre-emt-item-54" value="3">
+              <label for="pre-emt-item-54-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-54-opt-4" name="pre-emt-item-54" value="4">
+              <label for="pre-emt-item-54-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-54-opt-5" name="pre-emt-item-54" value="5">
+              <label for="pre-emt-item-54-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Me he molestado con personas cercanas por su falta de apoyo?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-55-opt-1" name="pre-emt-item-55" value="1" required>
+              <label for="pre-emt-item-55-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-55-opt-2" name="pre-emt-item-55" value="2">
+              <label for="pre-emt-item-55-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-55-opt-3" name="pre-emt-item-55" value="3">
+              <label for="pre-emt-item-55-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-55-opt-4" name="pre-emt-item-55" value="4">
+              <label for="pre-emt-item-55-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-55-opt-5" name="pre-emt-item-55" value="5">
+              <label for="pre-emt-item-55-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Te han dicho que quieres controlar todo y a todos?</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-56-opt-1" name="pre-emt-item-56" value="1" required>
+              <label for="pre-emt-item-56-opt-1">Nunca</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-56-opt-2" name="pre-emt-item-56" value="2">
+              <label for="pre-emt-item-56-opt-2">Pocas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-56-opt-3" name="pre-emt-item-56" value="3">
+              <label for="pre-emt-item-56-opt-3">Algunas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-56-opt-4" name="pre-emt-item-56" value="4">
+              <label for="pre-emt-item-56-opt-4">Muchas veces</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-56-opt-5" name="pre-emt-item-56" value="5">
+              <label for="pre-emt-item-56-opt-5">Siempre</label>            
+            </div>                  
+          </div>        
+        </div>
+      </div>
+      <div class="shortcode-form-section">
+        <span class="shortcode-form-title">
+            Autoeficacia de manejo de situaciones vitales estresantes
+        </span>
+        <p class="shortcode-form-instructions">
+            En esta sección queremos conocer tu percepción individual sobre lo que puedes hacer o no para cambiar tu problemática actual. No hay respuestas correctas o incorrectas. Responde cada pregunta.
+        </p>
+        <p class="shortcode-form-scale-instructions">
+            Lee los siguientes enunciados y, del lado derecho, elige una opción de respuesta que más se ajuste a ti.
+        </p>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Soy capaz de encontrar formas para reducir la presión que estoy sintiendo ahora, aunque alguien se oponga</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-57-opt-1" name="pre-emt-item-57" value="1" required>
+              <label for="pre-emt-item-57-opt-1">Totalmente falso</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-57-opt-2" name="pre-emt-item-57" value="2">
+              <label for="pre-emt-item-57-opt-2">Falso</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-57-opt-3" name="pre-emt-item-57" value="3">
+              <label for="pre-emt-item-57-opt-3">Incierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-57-opt-4" name="pre-emt-item-57" value="4">
+              <label for="pre-emt-item-57-opt-4">Cierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-57-opt-5" name="pre-emt-item-57" value="5">
+              <label for="pre-emt-item-57-opt-5">Totalmente cierto</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Tengo la capacidad de controlar el estrés aunque haya dificultades</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-58-opt-1" name="pre-emt-item-58" value="1" required>
+              <label for="pre-emt-item-58-opt-1">Totalmente falso</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-58-opt-2" name="pre-emt-item-58" value="2">
+              <label for="pre-emt-item-58-opt-2">Falso</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-58-opt-3" name="pre-emt-item-58" value="3">
+              <label for="pre-emt-item-58-opt-3">Incierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-58-opt-4" name="pre-emt-item-58" value="4">
+              <label for="pre-emt-item-58-opt-4">Cierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-58-opt-5" name="pre-emt-item-58" value="5">
+              <label for="pre-emt-item-58-opt-5">Totalmente cierto</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Puedo manejar situaciones complicadas si me esfuerzo lo suficiente</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-59-opt-1" name="pre-emt-item-59" value="1" required>
+              <label for="pre-emt-item-59-opt-1">Totalmente falso</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-59-opt-2" name="pre-emt-item-59" value="2">
+              <label for="pre-emt-item-59-opt-2">Falso</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-59-opt-3" name="pre-emt-item-59" value="3">
+              <label for="pre-emt-item-59-opt-3">Incierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-59-opt-4" name="pre-emt-item-59" value="4">
+              <label for="pre-emt-item-59-opt-4">Cierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-59-opt-5" name="pre-emt-item-59" value="5">
+              <label for="pre-emt-item-59-opt-5">Totalmente cierto</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Soy capaz de llevar con más tranquilidad la vida si pongo dedicación</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-60-opt-1" name="pre-emt-item-60" value="1" required>
+              <label for="pre-emt-item-60-opt-1">Totalmente falso</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-60-opt-2" name="pre-emt-item-60" value="2">
+              <label for="pre-emt-item-60-opt-2">Falso</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-60-opt-3" name="pre-emt-item-60" value="3">
+              <label for="pre-emt-item-60-opt-3">Incierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-60-opt-4" name="pre-emt-item-60" value="4">
+              <label for="pre-emt-item-60-opt-4">Cierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-60-opt-5" name="pre-emt-item-60" value="5">
+              <label for="pre-emt-item-60-opt-5">Totalmente cierto</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Me es posible aprender a manejar lo que me provoca estrés excesivo</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-61-opt-1" name="pre-emt-item-61" value="1" required>
+              <label for="pre-emt-item-61-opt-1">Totalmente falso</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-61-opt-2" name="pre-emt-item-61" value="2">
+              <label for="pre-emt-item-61-opt-2">Falso</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-61-opt-3" name="pre-emt-item-61" value="3">
+              <label for="pre-emt-item-61-opt-3">Incierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-61-opt-4" name="pre-emt-item-61" value="4">
+              <label for="pre-emt-item-61-opt-4">Cierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-61-opt-5" name="pre-emt-item-61" value="5">
+              <label for="pre-emt-item-61-opt-5">Totalmente cierto</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Puedo insistir y perseverar en la meta de manejar mejor el estrés</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-62-opt-1" name="pre-emt-item-62" value="1" required>
+              <label for="pre-emt-item-62-opt-1">Totalmente falso</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-62-opt-2" name="pre-emt-item-62" value="2">
+              <label for="pre-emt-item-62-opt-2">Falso</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-62-opt-3" name="pre-emt-item-62" value="3">
+              <label for="pre-emt-item-62-opt-3">Incierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-62-opt-4" name="pre-emt-item-62" value="4">
+              <label for="pre-emt-item-62-opt-4">Cierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-62-opt-5" name="pre-emt-item-62" value="5">
+              <label for="pre-emt-item-62-opt-5">Totalmente cierto</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Confío en manejar mejor los acontecimientos inesperados o difíciles que se presenten</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-63-opt-1" name="pre-emt-item-63" value="1" required>
+              <label for="pre-emt-item-63-opt-1">Totalmente falso</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-63-opt-2" name="pre-emt-item-63" value="2">
+              <label for="pre-emt-item-63-opt-2">Falso</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-63-opt-3" name="pre-emt-item-63" value="3">
+              <label for="pre-emt-item-63-opt-3">Incierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-63-opt-4" name="pre-emt-item-63" value="4">
+              <label for="pre-emt-item-63-opt-4">Cierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-63-opt-5" name="pre-emt-item-63" value="5">
+              <label for="pre-emt-item-63-opt-5">Totalmente cierto</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Al encontrarme en situaciones difíciles, puedo crear respuestas para salir de ellas</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-64-opt-1" name="pre-emt-item-64" value="1" required>
+              <label for="pre-emt-item-64-opt-1">Totalmente falso</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-64-opt-2" name="pre-emt-item-64" value="2">
+              <label for="pre-emt-item-64-opt-2">Falso</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-64-opt-3" name="pre-emt-item-64" value="3">
+              <label for="pre-emt-item-64-opt-3">Incierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-64-opt-4" name="pre-emt-item-64" value="4">
+              <label for="pre-emt-item-64-opt-4">Cierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-64-opt-5" name="pre-emt-item-64" value="5">
+              <label for="pre-emt-item-64-opt-5">Totalmente cierto</label>            
+            </div>                  
+          </div>        
+        </div>
+        <hr>
+        <div class="shortcode-form-scale-item">
+          <p class="shortcode-form-scale-item-label">Al encarar dificultades, soy capaz de permanecer tranquilo/a y pensar</p>
+          <div class="shortcode-form-scale-item-options-wrapper d-flex justify-content-around">
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-65-opt-1" name="pre-emt-item-65" value="1" required>
+              <label for="pre-emt-item-65-opt-1">Totalmente falso</label><br>          
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-65-opt-2" name="pre-emt-item-65" value="2">
+              <label for="pre-emt-item-65-opt-2">Falso</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-65-opt-3" name="pre-emt-item-65" value="3">
+              <label for="pre-emt-item-65-opt-3">Incierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-65-opt-4" name="pre-emt-item-65" value="4">
+              <label for="pre-emt-item-65-opt-4">Cierto</label><br>            
+            </div>
+            <div class="shortcode-form-scale-item-option">
+              <input type="radio" id="pre-emt-item-65-opt-5" name="pre-emt-item-65" value="5">
+              <label for="pre-emt-item-65-opt-5">Totalmente cierto</label>            
+            </div>                  
+          </div>        
+        </div>
+      </div>
       <?php wp_nonce_field( 'post_nonce_action', 'post_nonce_field' ); ?>
       <input type="submit" class="shortcode-form-button btn btn-primary btn-lg btn-block" value="<?php _e( 'Terminar', 'preemt' ); ?>">
     </form>
@@ -919,7 +1589,7 @@ function pre_emt_private_measurement(){
       global $current_user;
       $userId = $current_user->ID;
 
-      $postTitle = "Pretest emociones de #" . $userId;
+      $postTitle = "Pretest de estres y emociones de #" . $userId;
 
       $metaItem1 = $_POST['pre-emt-item-1'];
       $metaItem2 = $_POST['pre-emt-item-2'];
@@ -955,6 +1625,32 @@ function pre_emt_private_measurement(){
       $metaItem32 = $_POST['pre-emt-item-32'];
       $metaItem33 = $_POST['pre-emt-item-33'];
       $metaItem34 = $_POST['pre-emt-item-34'];
+
+      $metaItem41 = $_POST['pre-emt-item-41'];
+      $metaItem42 = $_POST['pre-emt-item-42'];
+      $metaItem43 = $_POST['pre-emt-item-43'];
+      $metaItem44 = $_POST['pre-emt-item-44'];
+      $metaItem45 = $_POST['pre-emt-item-45'];
+      $metaItem46 = $_POST['pre-emt-item-46'];
+      $metaItem47 = $_POST['pre-emt-item-47'];
+      $metaItem48 = $_POST['pre-emt-item-48'];
+      $metaItem49 = $_POST['pre-emt-item-49'];
+      $metaItem50 = $_POST['pre-emt-item-50'];
+      $metaItem51 = $_POST['pre-emt-item-51'];
+      $metaItem52 = $_POST['pre-emt-item-52'];
+      $metaItem53 = $_POST['pre-emt-item-53'];
+      $metaItem54 = $_POST['pre-emt-item-54'];
+      $metaItem55 = $_POST['pre-emt-item-55'];
+      $metaItem56 = $_POST['pre-emt-item-56'];
+      $metaItem57 = $_POST['pre-emt-item-57'];
+      $metaItem58 = $_POST['pre-emt-item-58'];
+      $metaItem59 = $_POST['pre-emt-item-59'];
+      $metaItem60 = $_POST['pre-emt-item-60'];
+      $metaItem61 = $_POST['pre-emt-item-61'];
+      $metaItem62 = $_POST['pre-emt-item-62'];
+      $metaItem63 = $_POST['pre-emt-item-63'];
+      $metaItem64 = $_POST['pre-emt-item-64'];
+      $metaItem65 = $_POST['pre-emt-item-65'];
 
         $postId = wp_insert_post( array(
           'post_title' => $postTitle,
@@ -996,7 +1692,33 @@ function pre_emt_private_measurement(){
         add_post_meta($postId, 'med_mb_item_31', $metaItem31, true);
         add_post_meta($postId, 'med_mb_item_32', $metaItem32, true);
         add_post_meta($postId, 'med_mb_item_33', $metaItem33, true);
-        add_post_meta($postId, 'med_mb_item_34', $metaItem34, true);    
+        add_post_meta($postId, 'med_mb_item_34', $metaItem34, true);
+        
+        add_post_meta($postId, 'med_mb_item_41', $metaItem41, true);
+        add_post_meta($postId, 'med_mb_item_42', $metaItem42, true);
+        add_post_meta($postId, 'med_mb_item_43', $metaItem43, true);
+        add_post_meta($postId, 'med_mb_item_44', $metaItem44, true);
+        add_post_meta($postId, 'med_mb_item_45', $metaItem45, true);
+        add_post_meta($postId, 'med_mb_item_46', $metaItem46, true);
+        add_post_meta($postId, 'med_mb_item_47', $metaItem47, true);
+        add_post_meta($postId, 'med_mb_item_48', $metaItem48, true);
+        add_post_meta($postId, 'med_mb_item_49', $metaItem49, true);
+        add_post_meta($postId, 'med_mb_item_50', $metaItem50, true);
+        add_post_meta($postId, 'med_mb_item_51', $metaItem51, true);
+        add_post_meta($postId, 'med_mb_item_52', $metaItem52, true);
+        add_post_meta($postId, 'med_mb_item_53', $metaItem53, true);
+        add_post_meta($postId, 'med_mb_item_54', $metaItem54, true);
+        add_post_meta($postId, 'med_mb_item_55', $metaItem55, true);
+        add_post_meta($postId, 'med_mb_item_56', $metaItem56, true);
+        add_post_meta($postId, 'med_mb_item_57', $metaItem57, true);
+        add_post_meta($postId, 'med_mb_item_58', $metaItem58, true);
+        add_post_meta($postId, 'med_mb_item_59', $metaItem59, true);
+        add_post_meta($postId, 'med_mb_item_60', $metaItem60, true);
+        add_post_meta($postId, 'med_mb_item_61', $metaItem61, true);
+        add_post_meta($postId, 'med_mb_item_62', $metaItem62, true);
+        add_post_meta($postId, 'med_mb_item_63', $metaItem63, true);
+        add_post_meta($postId, 'med_mb_item_64', $metaItem64, true);
+        add_post_meta($postId, 'med_mb_item_65', $metaItem65, true);   
         add_action( 'pre_emt_alerts', 'pre_emt_form_success' );
   }
 

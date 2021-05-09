@@ -61,7 +61,6 @@ require_once __DIR__ . '/features/custom-roles.php';
 require_once __DIR__ . '/features/custom-capabilities.php';
 
 require_once __DIR__ . '/features/forms/pretest-general.php';
-require_once __DIR__ . '/features/forms/pretest-stress.php';
 require_once __DIR__ . '/features/forms/pretest-emotions.php';
 
 require_once __DIR__ . '/features/default-pages-option.php';
