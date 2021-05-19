@@ -47,6 +47,6 @@ function cmb2_courses_card_metabox() {
 	$cmb->add_group_field( $group_field_id, array(
 		'name' => __( 'Dirección del taller', 'cmb2' ),
 		'id' => $prefix . 'url_course_card',
-		'type' => 'text-url',
+		'type' => 'text_url',
 	) );
 }

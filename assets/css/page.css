@@ -40,6 +40,12 @@
     text-align: justify;    
 }
 
+a.wp-block-button__link {
+    font-size: 1.8rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /*
 Forms
 */
