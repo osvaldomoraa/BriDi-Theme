@@ -13,7 +13,8 @@ function init_template(){
 add_action('after_setup_theme','init_template');
 
 function template_styles(){
-    wp_register_style( 'template-home', get_template_directory_uri() . '/assets/css/template-home.css' );  
+    wp_register_style( 'template-home', get_template_directory_uri() . '/assets/css/template-home.css' );
+    wp_register_style( 'template-courses', get_template_directory_uri() . '/assets/css/template-courses.css' );  
     wp_register_style( '404', get_template_directory_uri() . '/assets/css/404.css' );
     wp_register_style( 'page', get_template_directory_uri() . '/assets/css/page.css' );
     wp_register_style( 'single', get_template_directory_uri() . '/assets/css/single.css' ); 
@@ -56,6 +57,7 @@ require_once __DIR__ . '/features/custom-post-types.php';
 require_once __DIR__ . '/features/sesion-fields.php';
 require_once __DIR__ . '/features/measurement-fields.php';
 require_once __DIR__ . '/features/home-template-fields.php';
+require_once __DIR__ . '/features/courses-list-fields.php';
 
 require_once __DIR__ . '/features/custom-roles.php';
 require_once __DIR__ . '/features/custom-capabilities.php';

@@ -1,0 +1,103 @@
+.page-background-wrapper {
+    background: url("../img/page-background.jpg") #00000066;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    min-height: 400px;
+}
+
+#page-section .container {
+    margin-top: -350px;
+}
+
+.page-title {
+    color: #FFFFFF;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    
+}
+
+.page-content-box {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 50px;
+    min-height: 70vh;
+    overflow: auto;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.page-content-box p, .page-content-box img, .page-content-box iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-content-box p {
+    color: var(--brand-gray);
+    font-size: var(--paragraph-font-d);
+    font-weight: 400;
+    text-align: justify;    
+}
+
+.course-card-image {
+    max-height: 250px;
+    max-width: 100%;
+}
+
+.course-card-image-box {
+    text-align: center;
+}
+
+.course-card-text-box {
+    background-color: var(--brand-green);
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.course-card-text-box h3 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.course-card-text-box p {
+    color: #FFFFFF;
+}
+
+#page-section .btn {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    padding: 10px 35px 10px 35px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: var(--brand-green);
+    font-size: 1.6rem;
+}
+
+@media (max-width: 991px) {
+    .page-background-wrapper {
+        min-height: 350px;
+    }
+    #page-section .container {
+        margin-top: -300px;
+    }
+    .course-card-text-box {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    #page-section .container {
+        margin-top: -325px;
+    }
+    .page-content-box {
+        margin-top: 25px;
+        padding: 25px;
+    }
+    .course-card-text-box {
+        margin-bottom: 25px;
+    }
+}
