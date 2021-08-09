@@ -45,8 +45,8 @@ get_header();
                 <div class="col-8">
                 <?php
                 $sesion_layout_type = get_post_meta( get_the_ID(), 'ses_mb_sesion_layout_type', true );
-                switch ($sesion_layout_type) {
-                    case ($sesion_layout_type == 'text');
+                switch (true) {
+                    case $sesion_layout_type == 'text';
                         break;
                     case ($sesion_layout_type == 'video');
                         $ses_mb_main_video = get_post_meta( get_the_ID(), 'ses_mb_main_video', true );
@@ -56,7 +56,7 @@ get_header();
                             </div>
                         ';
                     break;
-                    case ($sesion_layout_type == 'slides');
+                    case $sesion_layout_type == 'slides';
                         $ses_mb_main_slides = get_post_meta( get_the_ID(), 'ses_mb_main_slides', true );
                         
                         echo '
@@ -65,7 +65,7 @@ get_header();
                             </div>
                         ';
                     break;
-                    case ($sesion_layout_type == 'audio');
+                    case $sesion_layout_type == 'audio';
                         $ses_mb_main_audio = get_post_meta( get_the_ID(), 'ses_mb_main_audio', true );
                         echo '
                             <div class="sesion-main-audio-box">

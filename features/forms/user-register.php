@@ -87,6 +87,7 @@ function complete_registration() {
         'first_name' 	=> 	$first_name,
         'last_name' 	=> 	$last_name,
         'nickname' 		=> 	$nickname,
+        'role'          =>  'participant'
 		);
         $user = wp_insert_user( $userdata );
         echo 'Listo! Ya te registramos. Puedes ingresar ahora haciendo <a href="' . get_site_url() . '/wp-login.php">click aqui</a>.';   
